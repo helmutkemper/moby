@@ -1,11 +1,11 @@
-package container // import "github.com/docker/docker/container"
+package container // import "github.com/helmutkemper/moby/container"
 
 import (
 	"os"
 
-	"github.com/docker/docker/api/types"
-	"github.com/docker/docker/pkg/archive"
-	"github.com/docker/docker/pkg/system"
+	"github.com/helmutkemper/moby/api/types"
+	"github.com/helmutkemper/moby/pkg/archive"
+	"github.com/helmutkemper/moby/pkg/system"
 	"github.com/pkg/errors"
 )
 

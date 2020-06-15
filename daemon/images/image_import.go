@@ -1,4 +1,4 @@
-package images // import "github.com/docker/docker/daemon/images"
+package images // import "github.com/helmutkemper/moby/daemon/images"
 
 import (
 	"encoding/json"
@@ -10,16 +10,16 @@ import (
 	"time"
 
 	"github.com/docker/distribution/reference"
-	"github.com/docker/docker/api/types/container"
-	"github.com/docker/docker/builder/dockerfile"
-	"github.com/docker/docker/builder/remotecontext"
-	"github.com/docker/docker/dockerversion"
-	"github.com/docker/docker/errdefs"
-	"github.com/docker/docker/image"
-	"github.com/docker/docker/layer"
-	"github.com/docker/docker/pkg/archive"
-	"github.com/docker/docker/pkg/progress"
-	"github.com/docker/docker/pkg/streamformatter"
+	"github.com/helmutkemper/moby/api/types/container"
+	"github.com/helmutkemper/moby/builder/dockerfile"
+	"github.com/helmutkemper/moby/builder/remotecontext"
+	"github.com/helmutkemper/moby/dockerversion"
+	"github.com/helmutkemper/moby/errdefs"
+	"github.com/helmutkemper/moby/image"
+	"github.com/helmutkemper/moby/layer"
+	"github.com/helmutkemper/moby/pkg/archive"
+	"github.com/helmutkemper/moby/pkg/progress"
+	"github.com/helmutkemper/moby/pkg/streamformatter"
 	"github.com/pkg/errors"
 )
 

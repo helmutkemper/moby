@@ -12,12 +12,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/docker/docker/api/types"
-	"github.com/docker/docker/api/types/swarm"
-	"github.com/docker/docker/api/types/versions"
-	"github.com/docker/docker/client"
-	"github.com/docker/docker/integration-cli/requirement"
-	"github.com/docker/docker/testutil/registry"
+	"github.com/helmutkemper/moby/api/types"
+	"github.com/helmutkemper/moby/api/types/swarm"
+	"github.com/helmutkemper/moby/api/types/versions"
+	"github.com/helmutkemper/moby/client"
+	"github.com/helmutkemper/moby/integration-cli/requirement"
+	"github.com/helmutkemper/moby/testutil/registry"
 )
 
 func ArchitectureIsNot(arch string) bool {

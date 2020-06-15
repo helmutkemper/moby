@@ -1,4 +1,4 @@
-package daemon // import "github.com/docker/docker/daemon"
+package daemon // import "github.com/helmutkemper/moby/daemon"
 
 import (
 	"context"
@@ -8,10 +8,10 @@ import (
 	"github.com/containerd/containerd"
 	"github.com/containerd/containerd/containers"
 	"github.com/docker/distribution/reference"
-	"github.com/docker/docker/api/types"
-	containertypes "github.com/docker/docker/api/types/container"
-	"github.com/docker/docker/container"
-	"github.com/docker/docker/errdefs"
+	"github.com/helmutkemper/moby/api/types"
+	containertypes "github.com/helmutkemper/moby/api/types/container"
+	"github.com/helmutkemper/moby/container"
+	"github.com/helmutkemper/moby/errdefs"
 	"github.com/moby/sys/mount"
 	"github.com/pkg/errors"
 	"github.com/sirupsen/logrus"

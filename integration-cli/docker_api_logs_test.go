@@ -13,10 +13,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/docker/docker/api/types"
-	"github.com/docker/docker/client"
-	"github.com/docker/docker/pkg/stdcopy"
-	"github.com/docker/docker/testutil/request"
+	"github.com/helmutkemper/moby/api/types"
+	"github.com/helmutkemper/moby/client"
+	"github.com/helmutkemper/moby/pkg/stdcopy"
+	"github.com/helmutkemper/moby/testutil/request"
 	"gotest.tools/v3/assert"
 )
 

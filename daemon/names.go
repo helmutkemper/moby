@@ -1,14 +1,14 @@
-package daemon // import "github.com/docker/docker/daemon"
+package daemon // import "github.com/helmutkemper/moby/daemon"
 
 import (
 	"fmt"
 	"strings"
 
-	"github.com/docker/docker/container"
-	"github.com/docker/docker/daemon/names"
-	"github.com/docker/docker/errdefs"
-	"github.com/docker/docker/pkg/namesgenerator"
-	"github.com/docker/docker/pkg/stringid"
+	"github.com/helmutkemper/moby/container"
+	"github.com/helmutkemper/moby/daemon/names"
+	"github.com/helmutkemper/moby/errdefs"
+	"github.com/helmutkemper/moby/pkg/namesgenerator"
+	"github.com/helmutkemper/moby/pkg/stringid"
 	"github.com/pkg/errors"
 	"github.com/sirupsen/logrus"
 )

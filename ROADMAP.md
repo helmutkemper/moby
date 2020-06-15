@@ -15,7 +15,7 @@ for us to review.
 ### How can I help?
 
 Short term objectives are listed in
-[Issues](https://github.com/moby/moby/issues?q=is%3Aopen+is%3Aissue+label%3Aroadmap). Our
+[Issues](https://github.com/helmutkemper/moby/issues?q=is%3Aopen+is%3Aissue+label%3Aroadmap). Our
 goal is to split down the workload in such way that anybody can jump in and help. Please comment on
 issues if you want to work on it to avoid duplicating effort! Similarly, if a maintainer is already
 assigned on an issue you'd like to participate in, pinging him on GitHub to offer your help is
@@ -49,7 +49,7 @@ a significant effort to refactor and even remove large parts of Moby's codebase.
 
 Tracking issues:
 
-- [#38043](https://github.com/moby/moby/issues/38043) Proposal: containerd image integration
+- [#38043](https://github.com/helmutkemper/moby/issues/38043) Proposal: containerd image integration
 
 ## 1.2 Image Builder
 
@@ -77,7 +77,7 @@ with separate new features defined with go build tags.
 
 Tracking issues:
 
-- [#32925](https://github.com/moby/moby/issues/32925) discussion: builder future: buildkit
+- [#32925](https://github.com/helmutkemper/moby/issues/32925) discussion: builder future: buildkit
 
 ## 1.3 Rootless Mode
 
@@ -87,7 +87,7 @@ binaries.
 
 Tracking issues:
 
-- [#37375](https://github.com/moby/moby/issues/37375) Proposal: allow running `dockerd` as an unprivileged user (aka rootless mode)
+- [#37375](https://github.com/helmutkemper/moby/issues/37375) Proposal: allow running `dockerd` as an unprivileged user (aka rootless mode)
 
 ## 1.4 Testing
 
@@ -101,7 +101,7 @@ API. Meanwhile tests of the docker CLI should generally live in docker/cli.
 
 Tracking issues:
 
-- [#32866](https://github.com/moby/moby/issues/32866) Replace integration-cli suite with API test suite
+- [#32866](https://github.com/helmutkemper/moby/issues/32866) Replace integration-cli suite with API test suite
 
 ## 1.5 Internal decoupling
 
@@ -113,5 +113,5 @@ We see gRPC as the natural communication layer between decoupled components.
 
 In addition to pushing out large components into other projects, much of the
 internal code structure, and in particular the
-["Daemon"](https://godoc.org/github.com/docker/docker/daemon#Daemon) object,
+["Daemon"](https://godoc.org/github.com/helmutkemper/moby/daemon#Daemon) object,
 should be split into smaller, more manageable, and more testable components.

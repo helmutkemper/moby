@@ -1,6 +1,6 @@
 // +build windows,!no_lcow
 
-package system // import "github.com/docker/docker/pkg/system"
+package system // import "github.com/helmutkemper/moby/pkg/system"
 
 import (
 	"strings"

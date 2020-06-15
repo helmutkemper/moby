@@ -1,4 +1,4 @@
-package chrootarchive // import "github.com/docker/docker/pkg/chrootarchive"
+package chrootarchive // import "github.com/helmutkemper/moby/pkg/chrootarchive"
 
 import (
 	"fmt"
@@ -9,8 +9,8 @@ import (
 	"os/user"
 	"path/filepath"
 
-	"github.com/docker/docker/pkg/archive"
-	"github.com/docker/docker/pkg/idtools"
+	"github.com/helmutkemper/moby/pkg/archive"
+	"github.com/helmutkemper/moby/pkg/idtools"
 )
 
 func init() {

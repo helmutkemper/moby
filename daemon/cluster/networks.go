@@ -1,18 +1,18 @@
-package cluster // import "github.com/docker/docker/daemon/cluster"
+package cluster // import "github.com/helmutkemper/moby/daemon/cluster"
 
 import (
 	"context"
 	"fmt"
 
-	apitypes "github.com/docker/docker/api/types"
-	"github.com/docker/docker/api/types/filters"
-	"github.com/docker/docker/api/types/network"
-	types "github.com/docker/docker/api/types/swarm"
-	"github.com/docker/docker/daemon/cluster/convert"
-	internalnetwork "github.com/docker/docker/daemon/network"
-	"github.com/docker/docker/errdefs"
-	"github.com/docker/docker/runconfig"
 	swarmapi "github.com/docker/swarmkit/api"
+	apitypes "github.com/helmutkemper/moby/api/types"
+	"github.com/helmutkemper/moby/api/types/filters"
+	"github.com/helmutkemper/moby/api/types/network"
+	types "github.com/helmutkemper/moby/api/types/swarm"
+	"github.com/helmutkemper/moby/daemon/cluster/convert"
+	internalnetwork "github.com/helmutkemper/moby/daemon/network"
+	"github.com/helmutkemper/moby/errdefs"
+	"github.com/helmutkemper/moby/runconfig"
 	"github.com/pkg/errors"
 	"github.com/sirupsen/logrus"
 )

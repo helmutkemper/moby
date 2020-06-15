@@ -1,4 +1,4 @@
-package local // import "github.com/docker/docker/libcontainerd/local"
+package local // import "github.com/helmutkemper/moby/libcontainerd/local"
 
 // This package contains the legacy in-proc calls in HCS using the v1 schema
 // for Windows runtime purposes.
@@ -23,11 +23,11 @@ import (
 	"github.com/containerd/containerd"
 	"github.com/containerd/containerd/cio"
 
-	"github.com/docker/docker/errdefs"
-	"github.com/docker/docker/libcontainerd/queue"
-	libcontainerdtypes "github.com/docker/docker/libcontainerd/types"
-	"github.com/docker/docker/pkg/sysinfo"
-	"github.com/docker/docker/pkg/system"
+	"github.com/helmutkemper/moby/errdefs"
+	"github.com/helmutkemper/moby/libcontainerd/queue"
+	libcontainerdtypes "github.com/helmutkemper/moby/libcontainerd/types"
+	"github.com/helmutkemper/moby/pkg/sysinfo"
+	"github.com/helmutkemper/moby/pkg/system"
 	specs "github.com/opencontainers/runtime-spec/specs-go"
 	"github.com/pkg/errors"
 	"github.com/sirupsen/logrus"
@@ -668,7 +668,7 @@ func (c *client) Start(_ context.Context, id, _ string, withStdin bool, attachSt
 	newProcess, err := ctr.hcsContainer.CreateProcess(createProcessParms)
 	if err != nil {
 		logger.WithError(err).Error("CreateProcess() failed")
-		// Fix for https://github.com/moby/moby/issues/38719.
+		// Fix for https://github.com/helmutkemper/moby/issues/38719.
 		// If the init process failed to launch, we still need to reap the
 		// container to avoid leaking it.
 		//

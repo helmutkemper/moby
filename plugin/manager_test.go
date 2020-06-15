@@ -1,9 +1,9 @@
-package plugin // import "github.com/docker/docker/plugin"
+package plugin // import "github.com/helmutkemper/moby/plugin"
 
 import (
 	"testing"
 
-	"github.com/docker/docker/api/types"
+	"github.com/helmutkemper/moby/api/types"
 )
 
 func TestValidatePrivileges(t *testing.T) {

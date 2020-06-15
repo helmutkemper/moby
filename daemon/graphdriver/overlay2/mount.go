@@ -1,6 +1,6 @@
 // +build linux
 
-package overlay2 // import "github.com/docker/docker/daemon/graphdriver/overlay2"
+package overlay2 // import "github.com/helmutkemper/moby/daemon/graphdriver/overlay2"
 
 import (
 	"bytes"
@@ -10,7 +10,7 @@ import (
 	"os"
 	"runtime"
 
-	"github.com/docker/docker/pkg/reexec"
+	"github.com/helmutkemper/moby/pkg/reexec"
 	"golang.org/x/sys/unix"
 )
 

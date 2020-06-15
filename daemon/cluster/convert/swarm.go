@@ -1,13 +1,13 @@
-package convert // import "github.com/docker/docker/daemon/cluster/convert"
+package convert // import "github.com/helmutkemper/moby/daemon/cluster/convert"
 
 import (
 	"fmt"
 	"strings"
 
-	types "github.com/docker/docker/api/types/swarm"
 	swarmapi "github.com/docker/swarmkit/api"
 	"github.com/docker/swarmkit/ca"
 	gogotypes "github.com/gogo/protobuf/types"
+	types "github.com/helmutkemper/moby/api/types/swarm"
 )
 
 // SwarmFromGRPC converts a grpc Cluster to a Swarm.

@@ -1,4 +1,4 @@
-package daemon // import "github.com/docker/docker/daemon"
+package daemon // import "github.com/helmutkemper/moby/daemon"
 
 import (
 	"fmt"
@@ -7,15 +7,15 @@ import (
 	"strings"
 	"time"
 
-	"github.com/docker/docker/api/types"
-	containertypes "github.com/docker/docker/api/types/container"
-	networktypes "github.com/docker/docker/api/types/network"
-	"github.com/docker/docker/container"
-	"github.com/docker/docker/errdefs"
-	"github.com/docker/docker/image"
-	"github.com/docker/docker/pkg/idtools"
-	"github.com/docker/docker/pkg/system"
-	"github.com/docker/docker/runconfig"
+	"github.com/helmutkemper/moby/api/types"
+	containertypes "github.com/helmutkemper/moby/api/types/container"
+	networktypes "github.com/helmutkemper/moby/api/types/network"
+	"github.com/helmutkemper/moby/container"
+	"github.com/helmutkemper/moby/errdefs"
+	"github.com/helmutkemper/moby/image"
+	"github.com/helmutkemper/moby/pkg/idtools"
+	"github.com/helmutkemper/moby/pkg/system"
+	"github.com/helmutkemper/moby/runconfig"
 	"github.com/opencontainers/selinux/go-selinux"
 	"github.com/pkg/errors"
 	"github.com/sirupsen/logrus"
@@ -97,7 +97,7 @@ func (daemon *Daemon) containerCreate(opts createOpts) (containertypes.Container
 	containerActions.WithValues("create").UpdateSince(start)
 
 	if warnings == nil {
-		warnings = make([]string, 0) // Create an empty slice to avoid https://github.com/moby/moby/issues/38222
+		warnings = make([]string, 0) // Create an empty slice to avoid https://github.com/helmutkemper/moby/issues/38222
 	}
 
 	return containertypes.ContainerCreateCreatedBody{ID: ctr.ID, Warnings: warnings}, nil
@@ -170,7 +170,7 @@ func (daemon *Daemon) create(opts createOpts) (retC *container.Container, retErr
 
 	ctr.HostConfig.StorageOpt = opts.params.HostConfig.StorageOpt
 
-	// Fixes: https://github.com/moby/moby/issues/34074 and
+	// Fixes: https://github.com/helmutkemper/moby/issues/34074 and
 	// https://github.com/docker/for-win/issues/999.
 	// Merge the daemon's storage options if they aren't already present. We only
 	// do this on Windows as there's no effective sandbox size limit other than

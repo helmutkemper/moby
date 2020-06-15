@@ -1,4 +1,4 @@
-package daemon // import "github.com/docker/docker/daemon"
+package daemon // import "github.com/helmutkemper/moby/daemon"
 
 import (
 	"bufio"
@@ -8,8 +8,8 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/docker/docker/daemon/config"
 	"github.com/docker/libnetwork/resolvconf"
+	"github.com/helmutkemper/moby/daemon/config"
 	"github.com/moby/sys/mount"
 	"github.com/moby/sys/mountinfo"
 	"github.com/pkg/errors"

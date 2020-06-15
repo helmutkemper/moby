@@ -1,12 +1,12 @@
-package cluster // import "github.com/docker/docker/daemon/cluster"
+package cluster // import "github.com/helmutkemper/moby/daemon/cluster"
 
 import (
 	"fmt"
 	"strings"
 
-	"github.com/docker/docker/api/types/filters"
-	runconfigopts "github.com/docker/docker/runconfig/opts"
 	swarmapi "github.com/docker/swarmkit/api"
+	"github.com/helmutkemper/moby/api/types/filters"
+	runconfigopts "github.com/helmutkemper/moby/runconfig/opts"
 )
 
 func newListNodesFilters(filter filters.Args) (*swarmapi.ListNodesRequest_Filters, error) {

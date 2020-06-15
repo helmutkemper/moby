@@ -8,10 +8,10 @@ import (
 	"strconv"
 	"sync"
 
-	"github.com/docker/docker/daemon/config"
-	"github.com/docker/docker/pkg/idtools"
-	"github.com/docker/docker/pkg/stringid"
 	"github.com/docker/libnetwork"
+	"github.com/helmutkemper/moby/daemon/config"
+	"github.com/helmutkemper/moby/pkg/idtools"
+	"github.com/helmutkemper/moby/pkg/stringid"
 	"github.com/moby/buildkit/executor"
 	"github.com/moby/buildkit/executor/oci"
 	"github.com/moby/buildkit/executor/runcexecutor"

@@ -1,4 +1,4 @@
-package layer // import "github.com/docker/docker/layer"
+package layer // import "github.com/helmutkemper/moby/layer"
 
 import (
 	"compress/gzip"
@@ -13,7 +13,7 @@ import (
 	"strings"
 
 	"github.com/docker/distribution"
-	"github.com/docker/docker/pkg/ioutils"
+	"github.com/helmutkemper/moby/pkg/ioutils"
 	digest "github.com/opencontainers/go-digest"
 	"github.com/pkg/errors"
 	"github.com/sirupsen/logrus"

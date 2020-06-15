@@ -1,18 +1,18 @@
-package vfs // import "github.com/docker/docker/daemon/graphdriver/vfs"
+package vfs // import "github.com/helmutkemper/moby/daemon/graphdriver/vfs"
 
 import (
 	"fmt"
 	"os"
 	"path/filepath"
 
-	"github.com/docker/docker/daemon/graphdriver"
-	"github.com/docker/docker/daemon/graphdriver/quota"
-	"github.com/docker/docker/errdefs"
-	"github.com/docker/docker/pkg/containerfs"
-	"github.com/docker/docker/pkg/idtools"
-	"github.com/docker/docker/pkg/parsers"
-	"github.com/docker/docker/pkg/system"
 	units "github.com/docker/go-units"
+	"github.com/helmutkemper/moby/daemon/graphdriver"
+	"github.com/helmutkemper/moby/daemon/graphdriver/quota"
+	"github.com/helmutkemper/moby/errdefs"
+	"github.com/helmutkemper/moby/pkg/containerfs"
+	"github.com/helmutkemper/moby/pkg/idtools"
+	"github.com/helmutkemper/moby/pkg/parsers"
+	"github.com/helmutkemper/moby/pkg/system"
 	"github.com/opencontainers/selinux/go-selinux/label"
 	"github.com/pkg/errors"
 )

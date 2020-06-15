@@ -1,8 +1,8 @@
-package registry // import "github.com/docker/docker/registry"
+package registry // import "github.com/helmutkemper/moby/registry"
 
 import (
 	"github.com/docker/distribution/reference"
-	registrytypes "github.com/docker/docker/api/types/registry"
+	registrytypes "github.com/helmutkemper/moby/api/types/registry"
 )
 
 // RepositoryData tracks the image list, list of endpoints for a repository

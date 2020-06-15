@@ -1,10 +1,10 @@
-package client // import "github.com/docker/docker/client"
+package client // import "github.com/helmutkemper/moby/client"
 
 import (
 	"context"
 	"encoding/json"
 
-	"github.com/docker/docker/api/types/container"
+	"github.com/helmutkemper/moby/api/types/container"
 )
 
 // ContainerUpdate updates resources of a container

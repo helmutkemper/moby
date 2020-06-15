@@ -1,6 +1,6 @@
 // +build !linux
 
-package cluster // import "github.com/docker/docker/daemon/cluster"
+package cluster // import "github.com/helmutkemper/moby/daemon/cluster"
 
 import "net"
 

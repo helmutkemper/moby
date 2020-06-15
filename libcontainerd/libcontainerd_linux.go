@@ -1,11 +1,11 @@
-package libcontainerd // import "github.com/docker/docker/libcontainerd"
+package libcontainerd // import "github.com/helmutkemper/moby/libcontainerd"
 
 import (
 	"context"
 
 	"github.com/containerd/containerd"
-	"github.com/docker/docker/libcontainerd/remote"
-	libcontainerdtypes "github.com/docker/docker/libcontainerd/types"
+	"github.com/helmutkemper/moby/libcontainerd/remote"
+	libcontainerdtypes "github.com/helmutkemper/moby/libcontainerd/types"
 )
 
 // NewClient creates a new libcontainerd client from a containerd client

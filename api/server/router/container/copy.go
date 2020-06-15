@@ -1,4 +1,4 @@
-package container // import "github.com/docker/docker/api/server/router/container"
+package container // import "github.com/helmutkemper/moby/api/server/router/container"
 
 import (
 	"compress/flate"
@@ -10,11 +10,11 @@ import (
 	"io"
 	"net/http"
 
-	"github.com/docker/docker/api/server/httputils"
-	"github.com/docker/docker/api/types"
-	"github.com/docker/docker/api/types/versions"
-	"github.com/docker/docker/errdefs"
 	gddohttputil "github.com/golang/gddo/httputil"
+	"github.com/helmutkemper/moby/api/server/httputils"
+	"github.com/helmutkemper/moby/api/types"
+	"github.com/helmutkemper/moby/api/types/versions"
+	"github.com/helmutkemper/moby/errdefs"
 )
 
 type pathError struct{}

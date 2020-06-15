@@ -1,4 +1,4 @@
-package images // import "github.com/docker/docker/daemon/images"
+package images // import "github.com/helmutkemper/moby/daemon/images"
 
 import (
 	"fmt"
@@ -6,12 +6,12 @@ import (
 	"time"
 
 	"github.com/docker/distribution/reference"
-	"github.com/docker/docker/api/types"
-	"github.com/docker/docker/container"
-	"github.com/docker/docker/errdefs"
-	"github.com/docker/docker/image"
-	"github.com/docker/docker/pkg/stringid"
-	"github.com/docker/docker/pkg/system"
+	"github.com/helmutkemper/moby/api/types"
+	"github.com/helmutkemper/moby/container"
+	"github.com/helmutkemper/moby/errdefs"
+	"github.com/helmutkemper/moby/image"
+	"github.com/helmutkemper/moby/pkg/stringid"
+	"github.com/helmutkemper/moby/pkg/system"
 	"github.com/pkg/errors"
 )
 

@@ -1,12 +1,12 @@
-package network // import "github.com/docker/docker/daemon/network"
+package network // import "github.com/helmutkemper/moby/daemon/network"
 
 import (
 	"net"
 	"sync"
 
-	networktypes "github.com/docker/docker/api/types/network"
-	clustertypes "github.com/docker/docker/daemon/cluster/provider"
 	"github.com/docker/go-connections/nat"
+	networktypes "github.com/helmutkemper/moby/api/types/network"
+	clustertypes "github.com/helmutkemper/moby/daemon/cluster/provider"
 	"github.com/pkg/errors"
 )
 

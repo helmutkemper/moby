@@ -1,10 +1,10 @@
-package convert // import "github.com/docker/docker/daemon/cluster/convert"
+package convert // import "github.com/helmutkemper/moby/daemon/cluster/convert"
 
 import (
-	swarmtypes "github.com/docker/docker/api/types/swarm"
-	types "github.com/docker/docker/api/types/swarm"
 	swarmapi "github.com/docker/swarmkit/api"
 	gogotypes "github.com/gogo/protobuf/types"
+	swarmtypes "github.com/helmutkemper/moby/api/types/swarm"
+	types "github.com/helmutkemper/moby/api/types/swarm"
 )
 
 // ConfigFromGRPC converts a grpc Config to a Config.

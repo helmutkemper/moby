@@ -1,4 +1,4 @@
-package archive // import "github.com/docker/docker/pkg/archive"
+package archive // import "github.com/helmutkemper/moby/pkg/archive"
 
 import (
 	"io/ioutil"
@@ -12,7 +12,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/docker/docker/pkg/system"
+	"github.com/helmutkemper/moby/pkg/system"
 	"gotest.tools/v3/assert"
 	"gotest.tools/v3/skip"
 )
@@ -185,7 +185,7 @@ func TestChangesWithChanges(t *testing.T) {
 	checkChanges(expectedChanges, changes, t)
 }
 
-// See https://github.com/docker/docker/pull/13590
+// See https://github.com/helmutkemper/moby/pull/13590
 func TestChangesWithChangesGH13590(t *testing.T) {
 	// TODO Windows. Needs further investigation to identify the failure
 	if runtime.GOOS == "windows" {
@@ -350,12 +350,12 @@ func TestChangesDirsMutated(t *testing.T) {
 	}
 
 	// Note there is slight difference between the Linux and Windows
-	// implementations here. Due to https://github.com/moby/moby/issues/9874,
-	// and the fix at https://github.com/moby/moby/pull/11422, Linux does not
+	// implementations here. Due to https://github.com/helmutkemper/moby/issues/9874,
+	// and the fix at https://github.com/helmutkemper/moby/pull/11422, Linux does not
 	// consider a change to the directory time as a change. Windows on NTFS
-	// does. See https://github.com/moby/moby/pull/37982 for more information.
+	// does. See https://github.com/helmutkemper/moby/pull/37982 for more information.
 	//
-	// Note also: https://github.com/moby/moby/pull/37982#discussion_r223523114
+	// Note also: https://github.com/helmutkemper/moby/pull/37982#discussion_r223523114
 	// that differences are ordered in the way the test is currently written, hence
 	// this is in the middle of the list of changes rather than at the start or
 	// end. Potentially can be addressed later.

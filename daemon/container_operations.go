@@ -1,4 +1,4 @@
-package daemon // import "github.com/docker/docker/daemon"
+package daemon // import "github.com/helmutkemper/moby/daemon"
 
 import (
 	"errors"
@@ -9,20 +9,20 @@ import (
 	"strings"
 	"time"
 
-	containertypes "github.com/docker/docker/api/types/container"
-	networktypes "github.com/docker/docker/api/types/network"
-	"github.com/docker/docker/container"
-	"github.com/docker/docker/daemon/network"
-	"github.com/docker/docker/errdefs"
-	"github.com/docker/docker/opts"
-	"github.com/docker/docker/pkg/stringid"
-	"github.com/docker/docker/runconfig"
 	"github.com/docker/go-connections/nat"
 	"github.com/docker/libnetwork"
 	netconst "github.com/docker/libnetwork/datastore"
 	"github.com/docker/libnetwork/netlabel"
 	"github.com/docker/libnetwork/options"
 	"github.com/docker/libnetwork/types"
+	containertypes "github.com/helmutkemper/moby/api/types/container"
+	networktypes "github.com/helmutkemper/moby/api/types/network"
+	"github.com/helmutkemper/moby/container"
+	"github.com/helmutkemper/moby/daemon/network"
+	"github.com/helmutkemper/moby/errdefs"
+	"github.com/helmutkemper/moby/opts"
+	"github.com/helmutkemper/moby/pkg/stringid"
+	"github.com/helmutkemper/moby/runconfig"
 	"github.com/sirupsen/logrus"
 )
 

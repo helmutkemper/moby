@@ -1,10 +1,10 @@
-package mounts // import "github.com/docker/docker/volume/mounts"
+package mounts // import "github.com/helmutkemper/moby/volume/mounts"
 
 import (
 	"errors"
 	"path"
 
-	"github.com/docker/docker/api/types/mount"
+	"github.com/helmutkemper/moby/api/types/mount"
 )
 
 var lcowSpecificValidators mountValidator = func(m *mount.Mount) error {

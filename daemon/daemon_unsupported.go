@@ -1,10 +1,10 @@
 // +build !linux,!freebsd,!windows
 
-package daemon // import "github.com/docker/docker/daemon"
+package daemon // import "github.com/helmutkemper/moby/daemon"
 
 import (
-	"github.com/docker/docker/daemon/config"
-	"github.com/docker/docker/pkg/sysinfo"
+	"github.com/helmutkemper/moby/daemon/config"
+	"github.com/helmutkemper/moby/pkg/sysinfo"
 )
 
 const platformSupported = false

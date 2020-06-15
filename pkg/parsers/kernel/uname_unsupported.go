@@ -1,6 +1,6 @@
 // +build !linux
 
-package kernel // import "github.com/docker/docker/pkg/parsers/kernel"
+package kernel // import "github.com/helmutkemper/moby/pkg/parsers/kernel"
 
 import (
 	"errors"

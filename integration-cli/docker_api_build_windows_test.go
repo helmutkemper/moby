@@ -6,8 +6,8 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/docker/docker/testutil/fakecontext"
-	"github.com/docker/docker/testutil/request"
+	"github.com/helmutkemper/moby/testutil/fakecontext"
+	"github.com/helmutkemper/moby/testutil/request"
 	"gotest.tools/v3/assert"
 	is "gotest.tools/v3/assert/cmp"
 )

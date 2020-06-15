@@ -1,4 +1,4 @@
-package daemon // import "github.com/docker/docker/daemon"
+package daemon // import "github.com/helmutkemper/moby/daemon"
 
 import (
 	"fmt"
@@ -7,10 +7,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/docker/docker/api/types"
-	"github.com/docker/docker/container"
-	"github.com/docker/docker/errdefs"
-	"github.com/docker/docker/pkg/system"
+	"github.com/helmutkemper/moby/api/types"
+	"github.com/helmutkemper/moby/container"
+	"github.com/helmutkemper/moby/errdefs"
+	"github.com/helmutkemper/moby/pkg/system"
 	"github.com/pkg/errors"
 	"github.com/sirupsen/logrus"
 )

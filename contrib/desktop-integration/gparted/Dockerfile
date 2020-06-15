@@ -7,7 +7,7 @@
 #   Tested on Debian Jessie
 # USAGE:
 #   # Download gparted Dockerfile
-#   wget http://raw.githubusercontent.com/docker/docker/master/contrib/desktop-integration/gparted/Dockerfile
+#   wget http://raw.githubusercontent.com/helmutkemper/moby/master/contrib/desktop-integration/gparted/Dockerfile
 #
 #   # Build gparted image
 #   docker build -t gparted .

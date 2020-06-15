@@ -1,4 +1,4 @@
-package daemon // import "github.com/docker/docker/daemon"
+package daemon // import "github.com/helmutkemper/moby/daemon"
 
 import (
 	"context"
@@ -7,13 +7,13 @@ import (
 	"runtime"
 	"time"
 
-	"github.com/docker/docker/api/types"
-	"github.com/docker/docker/api/types/backend"
-	"github.com/docker/docker/api/types/versions"
-	"github.com/docker/docker/api/types/versions/v1p20"
-	"github.com/docker/docker/container"
-	"github.com/docker/docker/errdefs"
-	"github.com/docker/docker/pkg/ioutils"
+	"github.com/helmutkemper/moby/api/types"
+	"github.com/helmutkemper/moby/api/types/backend"
+	"github.com/helmutkemper/moby/api/types/versions"
+	"github.com/helmutkemper/moby/api/types/versions/v1p20"
+	"github.com/helmutkemper/moby/container"
+	"github.com/helmutkemper/moby/errdefs"
+	"github.com/helmutkemper/moby/pkg/ioutils"
 )
 
 // ContainerStats writes information about the container to the stream

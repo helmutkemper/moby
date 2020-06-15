@@ -1,6 +1,6 @@
 // +build !windows
 
-package system // import "github.com/docker/docker/integration/system"
+package system // import "github.com/helmutkemper/moby/integration/system"
 
 import (
 	"context"
@@ -9,8 +9,8 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/docker/docker/testutil/daemon"
-	req "github.com/docker/docker/testutil/request"
+	"github.com/helmutkemper/moby/testutil/daemon"
+	req "github.com/helmutkemper/moby/testutil/request"
 	"gotest.tools/v3/assert"
 	is "gotest.tools/v3/assert/cmp"
 	"gotest.tools/v3/skip"

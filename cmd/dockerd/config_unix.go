@@ -5,10 +5,10 @@ package main
 import (
 	"os/exec"
 
-	"github.com/docker/docker/daemon/config"
-	"github.com/docker/docker/opts"
-	"github.com/docker/docker/rootless"
 	units "github.com/docker/go-units"
+	"github.com/helmutkemper/moby/daemon/config"
+	"github.com/helmutkemper/moby/opts"
+	"github.com/helmutkemper/moby/rootless"
 	"github.com/opencontainers/runc/libcontainer/cgroups"
 	"github.com/pkg/errors"
 	"github.com/spf13/pflag"

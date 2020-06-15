@@ -1,6 +1,6 @@
 // +build !windows
 
-package daemon // import "github.com/docker/docker/testutil/daemon"
+package daemon // import "github.com/helmutkemper/moby/testutil/daemon"
 
 import (
 	"fmt"

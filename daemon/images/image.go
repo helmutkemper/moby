@@ -1,4 +1,4 @@
-package images // import "github.com/docker/docker/daemon/images"
+package images // import "github.com/helmutkemper/moby/daemon/images"
 
 import (
 	"fmt"
@@ -6,8 +6,8 @@ import (
 	"github.com/pkg/errors"
 
 	"github.com/docker/distribution/reference"
-	"github.com/docker/docker/errdefs"
-	"github.com/docker/docker/image"
+	"github.com/helmutkemper/moby/errdefs"
+	"github.com/helmutkemper/moby/image"
 	specs "github.com/opencontainers/image-spec/specs-go/v1"
 )
 

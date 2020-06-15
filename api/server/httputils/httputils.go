@@ -1,4 +1,4 @@
-package httputils // import "github.com/docker/docker/api/server/httputils"
+package httputils // import "github.com/helmutkemper/moby/api/server/httputils"
 
 import (
 	"context"
@@ -7,10 +7,10 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/docker/docker/api/types"
-	"github.com/docker/docker/api/types/versions"
-	"github.com/docker/docker/errdefs"
 	"github.com/gorilla/mux"
+	"github.com/helmutkemper/moby/api/types"
+	"github.com/helmutkemper/moby/api/types/versions"
+	"github.com/helmutkemper/moby/errdefs"
 	"github.com/pkg/errors"
 	"github.com/sirupsen/logrus"
 	"google.golang.org/grpc/status"

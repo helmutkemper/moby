@@ -1,4 +1,4 @@
-package container // import "github.com/docker/docker/integration/container"
+package container // import "github.com/helmutkemper/moby/integration/container"
 
 import (
 	"context"
@@ -7,10 +7,10 @@ import (
 	"testing"
 	"time"
 
-	containertypes "github.com/docker/docker/api/types/container"
-	"github.com/docker/docker/api/types/versions"
-	"github.com/docker/docker/integration/internal/container"
-	net "github.com/docker/docker/integration/internal/network"
+	containertypes "github.com/helmutkemper/moby/api/types/container"
+	"github.com/helmutkemper/moby/api/types/versions"
+	"github.com/helmutkemper/moby/integration/internal/container"
+	net "github.com/helmutkemper/moby/integration/internal/network"
 	"gotest.tools/v3/assert"
 	is "gotest.tools/v3/assert/cmp"
 	"gotest.tools/v3/poll"
@@ -61,7 +61,7 @@ func TestNISDomainname(t *testing.T) {
 	// Rootless supports custom Hostname but doesn't support custom Domainname
 	//  OCI runtime create failed: container_linux.go:349: starting container process caused "process_linux.go:449: container init caused \
 	//  "write sysctl key kernel.domainname: open /proc/sys/kernel/domainname: permission denied\"": unknown.
-	skip.If(t, testEnv.IsRootless, "rootless mode doesn't support setting Domainname (TODO: https://github.com/moby/moby/issues/40632)")
+	skip.If(t, testEnv.IsRootless, "rootless mode doesn't support setting Domainname (TODO: https://github.com/helmutkemper/moby/issues/40632)")
 
 	defer setupTest(t)()
 	client := testEnv.APIClient()

@@ -4,8 +4,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/docker/docker/api/types/versions"
-	"github.com/docker/docker/integration-cli/cli"
+	"github.com/helmutkemper/moby/api/types/versions"
+	"github.com/helmutkemper/moby/integration-cli/cli"
 	"gotest.tools/v3/assert"
 )
 
@@ -122,7 +122,7 @@ func (s *DockerSuite) TestCommitChange(c *testing.T) {
 
 	expectedEnv := "[DEBUG=true test=1 PATH=/foo]"
 	// bug fixed in 1.36, add min APi >= 1.36 requirement
-	// PR record https://github.com/moby/moby/pull/35582
+	// PR record https://github.com/helmutkemper/moby/pull/35582
 	if versions.GreaterThan(testEnv.DaemonAPIVersion(), "1.35") && testEnv.OSType != "windows" {
 		// The ordering here is due to `PATH` being overridden from the container's
 		// ENV.  On windows, the container doesn't have a `PATH` ENV variable so

@@ -1,4 +1,4 @@
-package daemon // import "github.com/docker/docker/daemon"
+package daemon // import "github.com/helmutkemper/moby/daemon"
 
 import (
 	"fmt"
@@ -8,19 +8,19 @@ import (
 	"strings"
 	"time"
 
-	"github.com/docker/docker/api"
-	"github.com/docker/docker/api/types"
-	"github.com/docker/docker/cli/debug"
-	"github.com/docker/docker/daemon/logger"
-	"github.com/docker/docker/dockerversion"
-	"github.com/docker/docker/pkg/fileutils"
-	"github.com/docker/docker/pkg/parsers/kernel"
-	"github.com/docker/docker/pkg/parsers/operatingsystem"
-	"github.com/docker/docker/pkg/platform"
-	"github.com/docker/docker/pkg/sysinfo"
-	"github.com/docker/docker/pkg/system"
-	"github.com/docker/docker/registry"
 	metrics "github.com/docker/go-metrics"
+	"github.com/helmutkemper/moby/api"
+	"github.com/helmutkemper/moby/api/types"
+	"github.com/helmutkemper/moby/cli/debug"
+	"github.com/helmutkemper/moby/daemon/logger"
+	"github.com/helmutkemper/moby/dockerversion"
+	"github.com/helmutkemper/moby/pkg/fileutils"
+	"github.com/helmutkemper/moby/pkg/parsers/kernel"
+	"github.com/helmutkemper/moby/pkg/parsers/operatingsystem"
+	"github.com/helmutkemper/moby/pkg/platform"
+	"github.com/helmutkemper/moby/pkg/sysinfo"
+	"github.com/helmutkemper/moby/pkg/system"
+	"github.com/helmutkemper/moby/registry"
 	"github.com/sirupsen/logrus"
 )
 

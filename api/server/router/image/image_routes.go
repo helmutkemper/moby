@@ -1,4 +1,4 @@
-package image // import "github.com/docker/docker/api/server/router/image"
+package image // import "github.com/helmutkemper/moby/api/server/router/image"
 
 import (
 	"context"
@@ -9,15 +9,15 @@ import (
 	"strings"
 
 	"github.com/containerd/containerd/platforms"
-	"github.com/docker/docker/api/server/httputils"
-	"github.com/docker/docker/api/types"
-	"github.com/docker/docker/api/types/filters"
-	"github.com/docker/docker/api/types/versions"
-	"github.com/docker/docker/errdefs"
-	"github.com/docker/docker/pkg/ioutils"
-	"github.com/docker/docker/pkg/streamformatter"
-	"github.com/docker/docker/pkg/system"
-	"github.com/docker/docker/registry"
+	"github.com/helmutkemper/moby/api/server/httputils"
+	"github.com/helmutkemper/moby/api/types"
+	"github.com/helmutkemper/moby/api/types/filters"
+	"github.com/helmutkemper/moby/api/types/versions"
+	"github.com/helmutkemper/moby/errdefs"
+	"github.com/helmutkemper/moby/pkg/ioutils"
+	"github.com/helmutkemper/moby/pkg/streamformatter"
+	"github.com/helmutkemper/moby/pkg/system"
+	"github.com/helmutkemper/moby/registry"
 	specs "github.com/opencontainers/image-spec/specs-go/v1"
 	"github.com/pkg/errors"
 )

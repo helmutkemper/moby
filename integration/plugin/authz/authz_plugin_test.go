@@ -1,6 +1,6 @@
 // +build !windows
 
-package authz // import "github.com/docker/docker/integration/plugin/authz"
+package authz // import "github.com/helmutkemper/moby/integration/plugin/authz"
 
 import (
 	"context"
@@ -18,13 +18,13 @@ import (
 	"testing"
 	"time"
 
-	"github.com/docker/docker/api/types"
-	eventtypes "github.com/docker/docker/api/types/events"
-	"github.com/docker/docker/client"
-	"github.com/docker/docker/integration/internal/container"
-	"github.com/docker/docker/pkg/archive"
-	"github.com/docker/docker/pkg/authorization"
-	"github.com/docker/docker/testutil/environment"
+	"github.com/helmutkemper/moby/api/types"
+	eventtypes "github.com/helmutkemper/moby/api/types/events"
+	"github.com/helmutkemper/moby/client"
+	"github.com/helmutkemper/moby/integration/internal/container"
+	"github.com/helmutkemper/moby/pkg/archive"
+	"github.com/helmutkemper/moby/pkg/authorization"
+	"github.com/helmutkemper/moby/testutil/environment"
 	"gotest.tools/v3/assert"
 	"gotest.tools/v3/poll"
 	"gotest.tools/v3/skip"

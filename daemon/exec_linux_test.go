@@ -5,9 +5,9 @@ package daemon
 import (
 	"testing"
 
-	containertypes "github.com/docker/docker/api/types/container"
-	"github.com/docker/docker/container"
-	"github.com/docker/docker/daemon/exec"
+	containertypes "github.com/helmutkemper/moby/api/types/container"
+	"github.com/helmutkemper/moby/container"
+	"github.com/helmutkemper/moby/daemon/exec"
 	"github.com/opencontainers/runc/libcontainer/apparmor"
 	specs "github.com/opencontainers/runtime-spec/specs-go"
 	"gotest.tools/v3/assert"
@@ -29,7 +29,7 @@ func TestExecSetPlatformOpt(t *testing.T) {
 
 // TestExecSetPlatformOptPrivileged verifies that `docker exec --privileged`
 // does not disable AppArmor profiles. Exec currently inherits the `Privileged`
-// configuration of the container. See https://github.com/moby/moby/pull/31773#discussion_r105586900
+// configuration of the container. See https://github.com/helmutkemper/moby/pull/31773#discussion_r105586900
 //
 // This behavior may change in future, but test for the behavior to prevent it
 // from being changed accidentally.

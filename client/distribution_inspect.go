@@ -1,11 +1,11 @@
-package client // import "github.com/docker/docker/client"
+package client // import "github.com/helmutkemper/moby/client"
 
 import (
 	"context"
 	"encoding/json"
 	"net/url"
 
-	registrytypes "github.com/docker/docker/api/types/registry"
+	registrytypes "github.com/helmutkemper/moby/api/types/registry"
 )
 
 // DistributionInspect returns the image digest with full Manifest

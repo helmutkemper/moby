@@ -17,14 +17,14 @@ import (
 	"text/template"
 	"time"
 
-	"github.com/docker/docker/integration-cli/cli"
-	"github.com/docker/docker/integration-cli/cli/build"
-	"github.com/docker/docker/pkg/archive"
-	"github.com/docker/docker/pkg/system"
-	"github.com/docker/docker/testutil"
-	"github.com/docker/docker/testutil/fakecontext"
-	"github.com/docker/docker/testutil/fakegit"
-	"github.com/docker/docker/testutil/fakestorage"
+	"github.com/helmutkemper/moby/integration-cli/cli"
+	"github.com/helmutkemper/moby/integration-cli/cli/build"
+	"github.com/helmutkemper/moby/pkg/archive"
+	"github.com/helmutkemper/moby/pkg/system"
+	"github.com/helmutkemper/moby/testutil"
+	"github.com/helmutkemper/moby/testutil/fakecontext"
+	"github.com/helmutkemper/moby/testutil/fakegit"
+	"github.com/helmutkemper/moby/testutil/fakestorage"
 	"github.com/moby/buildkit/frontend/dockerfile/command"
 	digest "github.com/opencontainers/go-digest"
 	"gotest.tools/v3/assert"
@@ -439,7 +439,7 @@ ADD %s/file /`
 
 }
 
-// Regression for https://github.com/docker/docker/pull/27805
+// Regression for https://github.com/helmutkemper/moby/pull/27805
 // Makes sure that we don't use the cache if the contents of
 // a file in a subfolder of the context is modified and we re-build.
 func (s *DockerSuite) TestBuildModifyFileInFolder(c *testing.T) {
@@ -3601,7 +3601,7 @@ func (s *DockerSuite) TestBuildSymlinkBreakout(c *testing.T) {
 	tmpdir, err := ioutil.TempDir("", name)
 	assert.NilError(c, err)
 
-	// See https://github.com/moby/moby/pull/37770 for reason for next line.
+	// See https://github.com/helmutkemper/moby/pull/37770 for reason for next line.
 	tmpdir, err = system.GetLongPathName(tmpdir)
 	assert.NilError(c, err)
 
@@ -6002,7 +6002,7 @@ func (s *DockerSuite) TestBuildIntermediateTarget(c *testing.T) {
 
 // TestBuildOpaqueDirectory tests that a build succeeds which
 // creates opaque directories.
-// See https://github.com/docker/docker/issues/25244
+// See https://github.com/helmutkemper/moby/issues/25244
 func (s *DockerSuite) TestBuildOpaqueDirectory(c *testing.T) {
 	testRequires(c, DaemonIsLinux)
 	dockerFile := `

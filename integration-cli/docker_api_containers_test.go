@@ -17,19 +17,19 @@ import (
 	"testing"
 	"time"
 
-	"github.com/docker/docker/api/types"
-	containertypes "github.com/docker/docker/api/types/container"
-	mounttypes "github.com/docker/docker/api/types/mount"
-	networktypes "github.com/docker/docker/api/types/network"
-	"github.com/docker/docker/api/types/versions"
-	"github.com/docker/docker/client"
-	"github.com/docker/docker/integration-cli/cli"
-	"github.com/docker/docker/integration-cli/cli/build"
-	"github.com/docker/docker/pkg/ioutils"
-	"github.com/docker/docker/pkg/stringid"
-	"github.com/docker/docker/testutil/request"
-	"github.com/docker/docker/volume"
 	"github.com/docker/go-connections/nat"
+	"github.com/helmutkemper/moby/api/types"
+	containertypes "github.com/helmutkemper/moby/api/types/container"
+	mounttypes "github.com/helmutkemper/moby/api/types/mount"
+	networktypes "github.com/helmutkemper/moby/api/types/network"
+	"github.com/helmutkemper/moby/api/types/versions"
+	"github.com/helmutkemper/moby/client"
+	"github.com/helmutkemper/moby/integration-cli/cli"
+	"github.com/helmutkemper/moby/integration-cli/cli/build"
+	"github.com/helmutkemper/moby/pkg/ioutils"
+	"github.com/helmutkemper/moby/pkg/stringid"
+	"github.com/helmutkemper/moby/testutil/request"
+	"github.com/helmutkemper/moby/volume"
 	"github.com/moby/sys/mount"
 	"gotest.tools/v3/assert"
 	is "gotest.tools/v3/assert/cmp"
@@ -1224,7 +1224,7 @@ func (s *DockerSuite) TestContainerAPIDeleteRemoveVolume(c *testing.T) {
 	assert.Assert(c, os.IsNotExist(err), "expected to get ErrNotExist error, got %v", err)
 }
 
-// Regression test for https://github.com/docker/docker/issues/6231
+// Regression test for https://github.com/helmutkemper/moby/issues/6231
 func (s *DockerSuite) TestContainerAPIChunkedEncoding(c *testing.T) {
 
 	config := map[string]interface{}{
@@ -1993,7 +1993,7 @@ func (s *DockerSuite) TestContainersAPICreateMountsCreate(c *testing.T) {
 	var selinuxSharedLabel string
 	// this test label was added after a bug fix in 1.32, thus add requirements min API >= 1.32
 	// for the sake of making test pass in earlier versions
-	// bug fixed in https://github.com/moby/moby/pull/34684
+	// bug fixed in https://github.com/helmutkemper/moby/pull/34684
 	if !versions.LessThan(testEnv.DaemonAPIVersion(), "1.32") {
 		if runtime.GOOS == "linux" {
 			selinuxSharedLabel = "z"

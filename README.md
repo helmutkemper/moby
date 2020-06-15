@@ -40,7 +40,7 @@ Legal
 =====
 
 *Brought to you courtesy of our legal counsel. For more context,
-please see the [NOTICE](https://github.com/moby/moby/blob/master/NOTICE) document in this repo.*
+please see the [NOTICE](https://github.com/helmutkemper/moby/blob/master/NOTICE) document in this repo.*
 
 Use and transfer of Moby may be subject to certain restrictions by the
 United States and other governments.
@@ -53,5 +53,5 @@ For more information, please see https://www.bis.doc.gov
 Licensing
 =========
 Moby is licensed under the Apache License, Version 2.0. See
-[LICENSE](https://github.com/moby/moby/blob/master/LICENSE) for the full
+[LICENSE](https://github.com/helmutkemper/moby/blob/master/LICENSE) for the full
 license text.

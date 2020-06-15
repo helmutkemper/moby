@@ -1,10 +1,10 @@
-package restartmanager // import "github.com/docker/docker/restartmanager"
+package restartmanager // import "github.com/helmutkemper/moby/restartmanager"
 
 import (
 	"testing"
 	"time"
 
-	"github.com/docker/docker/api/types/container"
+	"github.com/helmutkemper/moby/api/types/container"
 )
 
 func TestRestartManagerTimeout(t *testing.T) {

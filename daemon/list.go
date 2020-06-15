@@ -1,4 +1,4 @@
-package daemon // import "github.com/docker/docker/daemon"
+package daemon // import "github.com/helmutkemper/moby/daemon"
 
 import (
 	"fmt"
@@ -6,13 +6,13 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/docker/docker/api/types"
-	"github.com/docker/docker/api/types/filters"
-	"github.com/docker/docker/container"
-	"github.com/docker/docker/daemon/images"
-	"github.com/docker/docker/errdefs"
-	"github.com/docker/docker/image"
 	"github.com/docker/go-connections/nat"
+	"github.com/helmutkemper/moby/api/types"
+	"github.com/helmutkemper/moby/api/types/filters"
+	"github.com/helmutkemper/moby/container"
+	"github.com/helmutkemper/moby/daemon/images"
+	"github.com/helmutkemper/moby/errdefs"
+	"github.com/helmutkemper/moby/image"
 	"github.com/pkg/errors"
 	"github.com/sirupsen/logrus"
 )

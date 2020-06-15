@@ -15,7 +15,7 @@ All 1.X versions are compatible with older ones.
 ### [v1.2](v1.2.md)
 
 * Implemented in Docker v1.12 (July, 2016)
-* The official spec document was written in August 2016 ([#25750](https://github.com/moby/moby/pull/25750))
+* The official spec document was written in August 2016 ([#25750](https://github.com/helmutkemper/moby/pull/25750))
 
 Changes:
 
@@ -24,7 +24,7 @@ Changes:
 ### [v1.1](v1.1.md)
 
 * Implemented in Docker v1.10 (February, 2016)
-* The official spec document was written in April 2016 ([#22264](https://github.com/moby/moby/pull/22264))
+* The official spec document was written in April 2016 ([#22264](https://github.com/helmutkemper/moby/pull/22264))
 
 Changes:
 
@@ -35,7 +35,7 @@ Changes:
 ### [v1](v1.md)
 
 * The initial revision
-* The official spec document was written in late 2014 ([#9560](https://github.com/moby/moby/pull/9560)), but actual implementations had existed even earlier
+* The official spec document was written in late 2014 ([#9560](https://github.com/helmutkemper/moby/pull/9560)), but actual implementations had existed even earlier
 
 
 ## Related specifications

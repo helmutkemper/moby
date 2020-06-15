@@ -10,8 +10,8 @@ import (
 	"net/url"
 	"testing"
 
-	"github.com/docker/docker/api/server/httputils"
-	"github.com/docker/docker/api/types"
+	"github.com/helmutkemper/moby/api/server/httputils"
+	"github.com/helmutkemper/moby/api/types"
 	"github.com/pkg/errors"
 	"gotest.tools/v3/assert"
 )

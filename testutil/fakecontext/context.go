@@ -1,4 +1,4 @@
-package fakecontext // import "github.com/docker/docker/testutil/fakecontext"
+package fakecontext // import "github.com/helmutkemper/moby/testutil/fakecontext"
 
 import (
 	"bytes"
@@ -8,7 +8,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/docker/docker/pkg/archive"
+	"github.com/helmutkemper/moby/pkg/archive"
 )
 
 // New creates a fake build context

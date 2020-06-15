@@ -49,7 +49,7 @@ registryBase='https://registry-1.docker.io'
 authBase='https://auth.docker.io'
 authService='registry.docker.io'
 
-# https://github.com/moby/moby/issues/33700
+# https://github.com/helmutkemper/moby/issues/33700
 fetch_blob() {
 	local token="$1"
 	shift

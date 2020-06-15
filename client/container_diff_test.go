@@ -1,4 +1,4 @@
-package client // import "github.com/docker/docker/client"
+package client // import "github.com/helmutkemper/moby/client"
 
 import (
 	"bytes"
@@ -10,8 +10,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/docker/docker/api/types/container"
-	"github.com/docker/docker/errdefs"
+	"github.com/helmutkemper/moby/api/types/container"
+	"github.com/helmutkemper/moby/errdefs"
 )
 
 func TestContainerDiffError(t *testing.T) {

@@ -1,8 +1,8 @@
-package daemon // import "github.com/docker/docker/daemon"
+package daemon // import "github.com/helmutkemper/moby/daemon"
 
 import (
-	"github.com/docker/docker/api/types"
-	"github.com/docker/docker/pkg/sysinfo"
+	"github.com/helmutkemper/moby/api/types"
+	"github.com/helmutkemper/moby/pkg/sysinfo"
 )
 
 // fillPlatformInfo fills the platform related info.

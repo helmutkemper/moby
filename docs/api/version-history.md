@@ -5,7 +5,7 @@ keywords: "API, Docker, rcli, REST, documentation"
 ---
 
 <!-- This file is maintained within the moby/moby GitHub
-     repository at https://github.com/moby/moby/. Make all
+     repository at https://github.com/helmutkemper/moby/. Make all
      pull requests against that repo. If you see this file in
      another repository, consider it read-only there, as it will
      periodically be overwritten by the definitive file. Pull

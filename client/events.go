@@ -1,4 +1,4 @@
-package client // import "github.com/docker/docker/client"
+package client // import "github.com/helmutkemper/moby/client"
 
 import (
 	"context"
@@ -6,10 +6,10 @@ import (
 	"net/url"
 	"time"
 
-	"github.com/docker/docker/api/types"
-	"github.com/docker/docker/api/types/events"
-	"github.com/docker/docker/api/types/filters"
-	timetypes "github.com/docker/docker/api/types/time"
+	"github.com/helmutkemper/moby/api/types"
+	"github.com/helmutkemper/moby/api/types/events"
+	"github.com/helmutkemper/moby/api/types/filters"
+	timetypes "github.com/helmutkemper/moby/api/types/time"
 )
 
 // Events returns a stream of events in the daemon. It's up to the caller to close the stream

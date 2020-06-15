@@ -1,14 +1,14 @@
 // +build linux
 
-package fuseoverlayfs // import "github.com/docker/docker/daemon/graphdriver/fuse-overlayfs"
+package fuseoverlayfs // import "github.com/helmutkemper/moby/daemon/graphdriver/fuse-overlayfs"
 
 import (
 	"testing"
 
-	"github.com/docker/docker/daemon/graphdriver"
-	"github.com/docker/docker/daemon/graphdriver/graphtest"
-	"github.com/docker/docker/pkg/archive"
-	"github.com/docker/docker/pkg/reexec"
+	"github.com/helmutkemper/moby/daemon/graphdriver"
+	"github.com/helmutkemper/moby/daemon/graphdriver/graphtest"
+	"github.com/helmutkemper/moby/pkg/archive"
+	"github.com/helmutkemper/moby/pkg/reexec"
 )
 
 func init() {

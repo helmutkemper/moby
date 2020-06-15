@@ -47,7 +47,7 @@ To build Docker, you will need the following:
 * Go version 1.6 or later
 * A clean checkout of the source added to a valid [Go
   workspace](https://golang.org/doc/code.html#Workspaces) under the path
-  *src/github.com/docker/docker* (unless you plan to use `AUTO_GOPATH`,
+  *src/github.com/helmutkemper/moby* (unless you plan to use `AUTO_GOPATH`,
   explained in more detail below)
 
 To build the Docker daemon, you will additionally need:
@@ -275,9 +275,9 @@ installed and available at runtime:
 * a [properly
   mounted](https://github.com/tianon/cgroupfs-mount/blob/master/cgroupfs-mount)
   cgroupfs hierarchy (having a single, all-encompassing "cgroup" mount point
-  [is](https://github.com/docker/docker/issues/2683)
-  [not](https://github.com/docker/docker/issues/3485)
-  [sufficient](https://github.com/docker/docker/issues/4568))
+  [is](https://github.com/helmutkemper/moby/issues/2683)
+  [not](https://github.com/helmutkemper/moby/issues/3485)
+  [sufficient](https://github.com/helmutkemper/moby/issues/4568))
 
 Additionally, the Docker client needs the following software to be installed and
 available at runtime:
@@ -290,7 +290,7 @@ The Docker daemon has very specific kernel requirements. Most pre-packaged
 kernels already include the necessary options enabled. If you are building your
 own kernel, you will either need to discover the options necessary via trial and
 error, or check out the [Gentoo
-ebuild](https://github.com/tianon/docker-overlay/blob/master/app-emulation/docker/docker-9999.ebuild),
+ebuild](https://github.com/tianon/docker-overlay/blob/master/app-emulation/helmutkemper/moby-9999.ebuild),
 in which a list is maintained (and if there are any issues or discrepancies in
 that list, please contact Tianon so they can be rectified).
 

@@ -1,4 +1,4 @@
-package mounts // import "github.com/docker/docker/volume/mounts"
+package mounts // import "github.com/helmutkemper/moby/volume/mounts"
 
 var (
 	testDestinationPath = `c:\foo`

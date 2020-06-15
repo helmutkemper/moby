@@ -6,7 +6,7 @@ import (
 	"context"
 	"testing"
 
-	"github.com/docker/docker/client"
+	"github.com/helmutkemper/moby/client"
 	"gotest.tools/v3/assert"
 	is "gotest.tools/v3/assert/cmp"
 )

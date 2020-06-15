@@ -1,4 +1,4 @@
-package dockerfile // import "github.com/docker/docker/builder/dockerfile"
+package dockerfile // import "github.com/helmutkemper/moby/builder/dockerfile"
 
 import (
 	"bytes"
@@ -7,11 +7,11 @@ import (
 	"strings"
 
 	"github.com/containerd/containerd/platforms"
-	"github.com/docker/docker/api/types/container"
-	"github.com/docker/docker/api/types/mount"
-	"github.com/docker/docker/pkg/idtools"
-	"github.com/docker/docker/pkg/jsonmessage"
-	"github.com/docker/docker/pkg/system"
+	"github.com/helmutkemper/moby/api/types/container"
+	"github.com/helmutkemper/moby/api/types/mount"
+	"github.com/helmutkemper/moby/pkg/idtools"
+	"github.com/helmutkemper/moby/pkg/jsonmessage"
+	"github.com/helmutkemper/moby/pkg/system"
 	"golang.org/x/sys/windows"
 )
 

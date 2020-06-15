@@ -1,4 +1,4 @@
-package signal // import "github.com/docker/docker/pkg/signal"
+package signal // import "github.com/helmutkemper/moby/pkg/signal"
 
 import (
 	"syscall"

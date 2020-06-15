@@ -1,4 +1,4 @@
-package kv // import "github.com/docker/docker/pkg/discovery/kv"
+package kv // import "github.com/helmutkemper/moby/pkg/discovery/kv"
 
 import (
 	"fmt"
@@ -6,13 +6,13 @@ import (
 	"strings"
 	"time"
 
-	"github.com/docker/docker/pkg/discovery"
 	"github.com/docker/go-connections/tlsconfig"
 	"github.com/docker/libkv"
 	"github.com/docker/libkv/store"
 	"github.com/docker/libkv/store/consul"
 	"github.com/docker/libkv/store/etcd"
 	"github.com/docker/libkv/store/zookeeper"
+	"github.com/helmutkemper/moby/pkg/discovery"
 	"github.com/sirupsen/logrus"
 )
 

@@ -1,4 +1,4 @@
-package container // import "github.com/docker/docker/container"
+package container // import "github.com/helmutkemper/moby/container"
 
 import (
 	"bytes"
@@ -15,30 +15,30 @@ import (
 	"time"
 
 	"github.com/containerd/containerd/cio"
-	containertypes "github.com/docker/docker/api/types/container"
-	mounttypes "github.com/docker/docker/api/types/mount"
-	swarmtypes "github.com/docker/docker/api/types/swarm"
-	"github.com/docker/docker/container/stream"
-	"github.com/docker/docker/daemon/exec"
-	"github.com/docker/docker/daemon/logger"
-	"github.com/docker/docker/daemon/logger/jsonfilelog"
-	"github.com/docker/docker/daemon/logger/local"
-	"github.com/docker/docker/daemon/logger/loggerutils/cache"
-	"github.com/docker/docker/daemon/network"
-	"github.com/docker/docker/errdefs"
-	"github.com/docker/docker/image"
-	"github.com/docker/docker/layer"
-	"github.com/docker/docker/pkg/containerfs"
-	"github.com/docker/docker/pkg/idtools"
-	"github.com/docker/docker/pkg/ioutils"
-	"github.com/docker/docker/pkg/signal"
-	"github.com/docker/docker/pkg/symlink"
-	"github.com/docker/docker/pkg/system"
-	"github.com/docker/docker/restartmanager"
-	"github.com/docker/docker/volume"
-	volumemounts "github.com/docker/docker/volume/mounts"
 	units "github.com/docker/go-units"
 	agentexec "github.com/docker/swarmkit/agent/exec"
+	containertypes "github.com/helmutkemper/moby/api/types/container"
+	mounttypes "github.com/helmutkemper/moby/api/types/mount"
+	swarmtypes "github.com/helmutkemper/moby/api/types/swarm"
+	"github.com/helmutkemper/moby/container/stream"
+	"github.com/helmutkemper/moby/daemon/exec"
+	"github.com/helmutkemper/moby/daemon/logger"
+	"github.com/helmutkemper/moby/daemon/logger/jsonfilelog"
+	"github.com/helmutkemper/moby/daemon/logger/local"
+	"github.com/helmutkemper/moby/daemon/logger/loggerutils/cache"
+	"github.com/helmutkemper/moby/daemon/network"
+	"github.com/helmutkemper/moby/errdefs"
+	"github.com/helmutkemper/moby/image"
+	"github.com/helmutkemper/moby/layer"
+	"github.com/helmutkemper/moby/pkg/containerfs"
+	"github.com/helmutkemper/moby/pkg/idtools"
+	"github.com/helmutkemper/moby/pkg/ioutils"
+	"github.com/helmutkemper/moby/pkg/signal"
+	"github.com/helmutkemper/moby/pkg/symlink"
+	"github.com/helmutkemper/moby/pkg/system"
+	"github.com/helmutkemper/moby/restartmanager"
+	"github.com/helmutkemper/moby/volume"
+	volumemounts "github.com/helmutkemper/moby/volume/mounts"
 	"github.com/pkg/errors"
 	"github.com/sirupsen/logrus"
 )
@@ -546,7 +546,7 @@ func (container *Container) StopTimeout() int {
 // The non-recommended host configuration in the start api can
 // make these fields nil again, this corrects that issue until
 // we remove that behavior for good.
-// See https://github.com/docker/docker/pull/17779
+// See https://github.com/helmutkemper/moby/pull/17779
 // for a more detailed explanation on why we don't want that.
 func (container *Container) InitDNSHostConfig() {
 	container.Lock()

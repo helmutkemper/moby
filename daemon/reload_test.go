@@ -1,4 +1,4 @@
-package daemon // import "github.com/docker/docker/daemon"
+package daemon // import "github.com/helmutkemper/moby/daemon"
 
 import (
 	"os"
@@ -7,12 +7,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/docker/docker/daemon/config"
-	"github.com/docker/docker/daemon/images"
-	"github.com/docker/docker/pkg/discovery"
-	_ "github.com/docker/docker/pkg/discovery/memory"
-	"github.com/docker/docker/registry"
 	"github.com/docker/libnetwork"
+	"github.com/helmutkemper/moby/daemon/config"
+	"github.com/helmutkemper/moby/daemon/images"
+	"github.com/helmutkemper/moby/pkg/discovery"
+	_ "github.com/helmutkemper/moby/pkg/discovery/memory"
+	"github.com/helmutkemper/moby/registry"
 	"github.com/sirupsen/logrus"
 	"gotest.tools/v3/assert"
 	is "gotest.tools/v3/assert/cmp"

@@ -1,4 +1,4 @@
-package daemon // import "github.com/docker/docker/daemon"
+package daemon // import "github.com/helmutkemper/moby/daemon"
 
 import (
 	"context"
@@ -8,16 +8,16 @@ import (
 	"strings"
 	"time"
 
-	"github.com/docker/docker/api/types"
-	containertypes "github.com/docker/docker/api/types/container"
-	"github.com/docker/docker/api/types/mount"
-	mounttypes "github.com/docker/docker/api/types/mount"
-	"github.com/docker/docker/container"
-	"github.com/docker/docker/errdefs"
-	"github.com/docker/docker/volume"
-	volumemounts "github.com/docker/docker/volume/mounts"
-	"github.com/docker/docker/volume/service"
-	volumeopts "github.com/docker/docker/volume/service/opts"
+	"github.com/helmutkemper/moby/api/types"
+	containertypes "github.com/helmutkemper/moby/api/types/container"
+	"github.com/helmutkemper/moby/api/types/mount"
+	mounttypes "github.com/helmutkemper/moby/api/types/mount"
+	"github.com/helmutkemper/moby/container"
+	"github.com/helmutkemper/moby/errdefs"
+	"github.com/helmutkemper/moby/volume"
+	volumemounts "github.com/helmutkemper/moby/volume/mounts"
+	"github.com/helmutkemper/moby/volume/service"
+	volumeopts "github.com/helmutkemper/moby/volume/service/opts"
 	"github.com/pkg/errors"
 	"github.com/sirupsen/logrus"
 )

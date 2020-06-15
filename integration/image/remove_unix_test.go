@@ -1,6 +1,6 @@
 // +build !windows
 
-package image // import "github.com/docker/docker/integration/image"
+package image // import "github.com/helmutkemper/moby/integration/image"
 
 import (
 	"context"
@@ -15,13 +15,13 @@ import (
 	"testing"
 	"unsafe"
 
-	"github.com/docker/docker/api/types"
-	_ "github.com/docker/docker/daemon/graphdriver/register" // register graph drivers
-	"github.com/docker/docker/daemon/images"
-	"github.com/docker/docker/layer"
-	"github.com/docker/docker/pkg/idtools"
-	"github.com/docker/docker/testutil/daemon"
-	"github.com/docker/docker/testutil/fakecontext"
+	"github.com/helmutkemper/moby/api/types"
+	_ "github.com/helmutkemper/moby/daemon/graphdriver/register" // register graph drivers
+	"github.com/helmutkemper/moby/daemon/images"
+	"github.com/helmutkemper/moby/layer"
+	"github.com/helmutkemper/moby/pkg/idtools"
+	"github.com/helmutkemper/moby/testutil/daemon"
+	"github.com/helmutkemper/moby/testutil/fakecontext"
 	"gotest.tools/v3/assert"
 	"gotest.tools/v3/skip"
 )

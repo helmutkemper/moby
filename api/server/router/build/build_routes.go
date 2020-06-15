@@ -1,4 +1,4 @@
-package build // import "github.com/docker/docker/api/server/router/build"
+package build // import "github.com/helmutkemper/moby/api/server/router/build"
 
 import (
 	"bufio"
@@ -14,17 +14,17 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/docker/docker/api/server/httputils"
-	"github.com/docker/docker/api/types"
-	"github.com/docker/docker/api/types/backend"
-	"github.com/docker/docker/api/types/container"
-	"github.com/docker/docker/api/types/filters"
-	"github.com/docker/docker/api/types/versions"
-	"github.com/docker/docker/errdefs"
-	"github.com/docker/docker/pkg/ioutils"
-	"github.com/docker/docker/pkg/progress"
-	"github.com/docker/docker/pkg/streamformatter"
 	units "github.com/docker/go-units"
+	"github.com/helmutkemper/moby/api/server/httputils"
+	"github.com/helmutkemper/moby/api/types"
+	"github.com/helmutkemper/moby/api/types/backend"
+	"github.com/helmutkemper/moby/api/types/container"
+	"github.com/helmutkemper/moby/api/types/filters"
+	"github.com/helmutkemper/moby/api/types/versions"
+	"github.com/helmutkemper/moby/errdefs"
+	"github.com/helmutkemper/moby/pkg/ioutils"
+	"github.com/helmutkemper/moby/pkg/progress"
+	"github.com/helmutkemper/moby/pkg/streamformatter"
 	"github.com/pkg/errors"
 	"github.com/sirupsen/logrus"
 )

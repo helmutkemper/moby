@@ -1,8 +1,8 @@
-package images // import "github.com/docker/docker/daemon/images"
+package images // import "github.com/helmutkemper/moby/daemon/images"
 
 import (
-	"github.com/docker/docker/builder"
-	"github.com/docker/docker/image/cache"
+	"github.com/helmutkemper/moby/builder"
+	"github.com/helmutkemper/moby/image/cache"
 	"github.com/sirupsen/logrus"
 )
 

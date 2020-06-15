@@ -1,12 +1,12 @@
-package file // import "github.com/docker/docker/pkg/discovery/file"
+package file // import "github.com/helmutkemper/moby/pkg/discovery/file"
 
 import (
 	"io/ioutil"
 	"os"
 	"testing"
 
-	"github.com/docker/docker/internal/test/suite"
-	"github.com/docker/docker/pkg/discovery"
+	"github.com/helmutkemper/moby/internal/test/suite"
+	"github.com/helmutkemper/moby/pkg/discovery"
 	"gotest.tools/v3/assert"
 )
 

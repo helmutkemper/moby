@@ -246,7 +246,7 @@ RUN useradd --create-home --gid docker unprivilegeduser \
  && mkdir -p /home/unprivilegeduser/.local/share/docker \
  && chown -R unprivilegeduser /home/unprivilegeduser
 # Let us use a .bashrc file
-RUN ln -sfv /go/src/github.com/docker/docker/.bashrc ~/.bashrc
+RUN ln -sfv /go/src/github.com/helmutkemper/moby/.bashrc ~/.bashrc
 # Activate bash completion and include Docker's completion if mounted with DOCKER_BASH_COMPLETION_PATH
 RUN echo "source /usr/share/bash-completion/bash_completion" >> /etc/bash.bashrc
 RUN ln -s /usr/local/completion/bash/docker /etc/bash_completion.d/docker
@@ -282,7 +282,7 @@ RUN --mount=type=cache,sharing=locked,id=moby-dev-aptlib,target=/var/lib/apt \
 
 
 # Switch to use iptables instead of nftables (to match the CI hosts)
-# TODO use some kind of runtime auto-detection instead if/when nftables is supported (https://github.com/moby/moby/issues/26824)
+# TODO use some kind of runtime auto-detection instead if/when nftables is supported (https://github.com/helmutkemper/moby/issues/26824)
 RUN update-alternatives --set iptables  /usr/sbin/iptables-legacy  || true \
  && update-alternatives --set ip6tables /usr/sbin/ip6tables-legacy || true \
  && update-alternatives --set arptables /usr/sbin/arptables-legacy || true
@@ -308,7 +308,7 @@ COPY --from=proxy         /build/ /usr/local/bin/
 ENV PATH=/usr/local/cli:$PATH
 ARG DOCKER_BUILDTAGS
 ENV DOCKER_BUILDTAGS="${DOCKER_BUILDTAGS}"
-WORKDIR /go/src/github.com/docker/docker
+WORKDIR /go/src/github.com/helmutkemper/moby
 VOLUME /var/lib/docker
 VOLUME /home/unprivilegeduser/.local/share/docker
 # Wrap all commands in the "docker-in-docker" script to allow nested containers
@@ -352,23 +352,23 @@ COPY --from=containerd  /build/ /usr/local/bin/
 COPY --from=rootlesskit /build/ /usr/local/bin/
 COPY --from=proxy       /build/ /usr/local/bin/
 COPY --from=vpnkit      /vpnkit /usr/local/bin/vpnkit.x86_64
-WORKDIR /go/src/github.com/docker/docker
+WORKDIR /go/src/github.com/helmutkemper/moby
 
 FROM binary-base AS build-binary
 RUN --mount=type=cache,target=/root/.cache/go-build \
-    --mount=type=bind,target=/go/src/github.com/docker/docker \
+    --mount=type=bind,target=/go/src/github.com/helmutkemper/moby \
         hack/make.sh binary
 
 FROM binary-base AS build-dynbinary
 RUN --mount=type=cache,target=/root/.cache/go-build \
-    --mount=type=bind,target=/go/src/github.com/docker/docker \
+    --mount=type=bind,target=/go/src/github.com/helmutkemper/moby \
         hack/make.sh dynbinary
 
 FROM binary-base AS build-cross
 ARG DOCKER_CROSSPLATFORMS
 RUN --mount=type=cache,target=/root/.cache/go-build \
-    --mount=type=bind,target=/go/src/github.com/docker/docker \
-    --mount=type=tmpfs,target=/go/src/github.com/docker/docker/autogen \
+    --mount=type=bind,target=/go/src/github.com/helmutkemper/moby \
+    --mount=type=tmpfs,target=/go/src/github.com/helmutkemper/moby/autogen \
         hack/make.sh cross
 
 FROM scratch AS binary
@@ -381,4 +381,4 @@ FROM scratch AS cross
 COPY --from=build-cross /build/bundles/ /
 
 FROM dev AS final
-COPY . /go/src/github.com/docker/docker
+COPY . /go/src/github.com/helmutkemper/moby

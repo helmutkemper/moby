@@ -1,4 +1,4 @@
-package container // import "github.com/docker/docker/integration/container"
+package container // import "github.com/helmutkemper/moby/integration/container"
 
 import (
 	"context"
@@ -8,16 +8,16 @@ import (
 	"testing"
 	"time"
 
-	"github.com/docker/docker/api/types"
-	"github.com/docker/docker/api/types/container"
-	containertypes "github.com/docker/docker/api/types/container"
-	"github.com/docker/docker/api/types/network"
-	"github.com/docker/docker/api/types/versions"
-	"github.com/docker/docker/client"
-	"github.com/docker/docker/errdefs"
-	ctr "github.com/docker/docker/integration/internal/container"
-	"github.com/docker/docker/oci"
-	"github.com/docker/docker/testutil/request"
+	"github.com/helmutkemper/moby/api/types"
+	"github.com/helmutkemper/moby/api/types/container"
+	containertypes "github.com/helmutkemper/moby/api/types/container"
+	"github.com/helmutkemper/moby/api/types/network"
+	"github.com/helmutkemper/moby/api/types/versions"
+	"github.com/helmutkemper/moby/client"
+	"github.com/helmutkemper/moby/errdefs"
+	ctr "github.com/helmutkemper/moby/integration/internal/container"
+	"github.com/helmutkemper/moby/oci"
+	"github.com/helmutkemper/moby/testutil/request"
 	specs "github.com/opencontainers/image-spec/specs-go/v1"
 	"gotest.tools/v3/assert"
 	is "gotest.tools/v3/assert/cmp"
@@ -545,7 +545,7 @@ func TestCreateWithInvalidHealthcheckParams(t *testing.T) {
 }
 
 // Make sure that anonymous volumes can be overritten by tmpfs
-// https://github.com/moby/moby/issues/40446
+// https://github.com/helmutkemper/moby/issues/40446
 func TestCreateTmpfsOverrideAnonymousVolume(t *testing.T) {
 	skip.If(t, testEnv.DaemonInfo.OSType == "windows", "windows does not support tmpfs")
 	defer setupTest(t)()

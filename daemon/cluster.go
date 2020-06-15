@@ -1,12 +1,12 @@
-package daemon // import "github.com/docker/docker/daemon"
+package daemon // import "github.com/helmutkemper/moby/daemon"
 
 import (
-	apitypes "github.com/docker/docker/api/types"
-	"github.com/docker/docker/api/types/filters"
 	lncluster "github.com/docker/libnetwork/cluster"
+	apitypes "github.com/helmutkemper/moby/api/types"
+	"github.com/helmutkemper/moby/api/types/filters"
 )
 
-// Cluster is the interface for github.com/docker/docker/daemon/cluster.(*Cluster).
+// Cluster is the interface for github.com/helmutkemper/moby/daemon/cluster.(*Cluster).
 type Cluster interface {
 	ClusterStatus
 	NetworkManager

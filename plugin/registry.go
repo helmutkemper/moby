@@ -9,14 +9,14 @@ import (
 
 	"github.com/sirupsen/logrus"
 
-	"github.com/docker/docker/dockerversion"
+	"github.com/helmutkemper/moby/dockerversion"
 
 	"github.com/pkg/errors"
 
 	"github.com/containerd/containerd/remotes"
 	"github.com/containerd/containerd/remotes/docker"
 	"github.com/docker/distribution/reference"
-	"github.com/docker/docker/api/types"
+	"github.com/helmutkemper/moby/api/types"
 )
 
 // scope builds the correct auth scope for the registry client to authorize against

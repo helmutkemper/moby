@@ -7,7 +7,7 @@
 #   Tested on Debian Jessie
 # USAGE:
 #   # Download Chromium Dockerfile
-#   wget http://raw.githubusercontent.com/docker/docker/master/contrib/desktop-integration/chromium/Dockerfile
+#   wget http://raw.githubusercontent.com/helmutkemper/moby/master/contrib/desktop-integration/chromium/Dockerfile
 #
 #   # Build chromium image
 #   docker build -t chromium .

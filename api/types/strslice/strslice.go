@@ -1,4 +1,4 @@
-package strslice // import "github.com/docker/docker/api/types/strslice"
+package strslice // import "github.com/helmutkemper/moby/api/types/strslice"
 
 import "encoding/json"
 

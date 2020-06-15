@@ -14,18 +14,18 @@ import (
 	"testing"
 	"time"
 
-	"github.com/docker/docker/api/types"
-	"github.com/docker/docker/api/types/versions/v1p20"
-	"github.com/docker/docker/integration-cli/cli"
-	"github.com/docker/docker/integration-cli/daemon"
-	"github.com/docker/docker/pkg/stringid"
-	"github.com/docker/docker/runconfig"
-	testdaemon "github.com/docker/docker/testutil/daemon"
 	"github.com/docker/libnetwork/driverapi"
 	remoteapi "github.com/docker/libnetwork/drivers/remote/api"
 	"github.com/docker/libnetwork/ipamapi"
 	remoteipam "github.com/docker/libnetwork/ipams/remote/api"
 	"github.com/docker/libnetwork/netlabel"
+	"github.com/helmutkemper/moby/api/types"
+	"github.com/helmutkemper/moby/api/types/versions/v1p20"
+	"github.com/helmutkemper/moby/integration-cli/cli"
+	"github.com/helmutkemper/moby/integration-cli/daemon"
+	"github.com/helmutkemper/moby/pkg/stringid"
+	"github.com/helmutkemper/moby/runconfig"
+	testdaemon "github.com/helmutkemper/moby/testutil/daemon"
 	"github.com/vishvananda/netlink"
 	"golang.org/x/sys/unix"
 	"gotest.tools/v3/assert"
@@ -1740,7 +1740,7 @@ func (s *DockerNetworkSuite) TestDockerNetworkDisconnectFromBridge(c *testing.T)
 	assert.NilError(c, err)
 }
 
-// TestConntrackFlowsLeak covers the failure scenario of ticket: https://github.com/docker/docker/issues/8795
+// TestConntrackFlowsLeak covers the failure scenario of ticket: https://github.com/helmutkemper/moby/issues/8795
 // Validates that conntrack is correctly cleaned once a container is destroyed
 func (s *DockerNetworkSuite) TestConntrackFlowsLeak(c *testing.T) {
 	testRequires(c, IsAmd64, DaemonIsLinux, Network, testEnv.IsLocalDaemon)

@@ -1,14 +1,14 @@
-package service // import "github.com/docker/docker/integration/service"
+package service // import "github.com/helmutkemper/moby/integration/service"
 
 import (
 	"context"
 	"testing"
 
-	"github.com/docker/docker/api/types"
-	"github.com/docker/docker/api/types/network"
-	"github.com/docker/docker/integration/internal/container"
-	net "github.com/docker/docker/integration/internal/network"
-	"github.com/docker/docker/integration/internal/swarm"
+	"github.com/helmutkemper/moby/api/types"
+	"github.com/helmutkemper/moby/api/types/network"
+	"github.com/helmutkemper/moby/integration/internal/container"
+	net "github.com/helmutkemper/moby/integration/internal/network"
+	"github.com/helmutkemper/moby/integration/internal/swarm"
 	"gotest.tools/v3/assert"
 	is "gotest.tools/v3/assert/cmp"
 	"gotest.tools/v3/skip"

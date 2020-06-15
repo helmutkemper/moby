@@ -1,4 +1,4 @@
-package container // import "github.com/docker/docker/container"
+package container // import "github.com/helmutkemper/moby/container"
 
 import (
 	"fmt"
@@ -7,10 +7,10 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/docker/docker/api/types/container"
-	swarmtypes "github.com/docker/docker/api/types/swarm"
-	"github.com/docker/docker/daemon/logger/jsonfilelog"
-	"github.com/docker/docker/pkg/signal"
+	"github.com/helmutkemper/moby/api/types/container"
+	swarmtypes "github.com/helmutkemper/moby/api/types/swarm"
+	"github.com/helmutkemper/moby/daemon/logger/jsonfilelog"
+	"github.com/helmutkemper/moby/pkg/signal"
 	"gotest.tools/v3/assert"
 )
 

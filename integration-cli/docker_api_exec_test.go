@@ -12,11 +12,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/docker/docker/api/types"
-	"github.com/docker/docker/api/types/versions"
-	"github.com/docker/docker/client"
-	"github.com/docker/docker/integration-cli/checker"
-	"github.com/docker/docker/testutil/request"
+	"github.com/helmutkemper/moby/api/types"
+	"github.com/helmutkemper/moby/api/types/versions"
+	"github.com/helmutkemper/moby/client"
+	"github.com/helmutkemper/moby/integration-cli/checker"
+	"github.com/helmutkemper/moby/testutil/request"
 	"gotest.tools/v3/assert"
 	"gotest.tools/v3/poll"
 )

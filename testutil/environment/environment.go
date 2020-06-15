@@ -1,4 +1,4 @@
-package environment // import "github.com/docker/docker/testutil/environment"
+package environment // import "github.com/helmutkemper/moby/testutil/environment"
 
 import (
 	"context"
@@ -8,10 +8,10 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/docker/docker/api/types"
-	"github.com/docker/docker/api/types/filters"
-	"github.com/docker/docker/client"
-	"github.com/docker/docker/testutil/fixtures/load"
+	"github.com/helmutkemper/moby/api/types"
+	"github.com/helmutkemper/moby/api/types/filters"
+	"github.com/helmutkemper/moby/client"
+	"github.com/helmutkemper/moby/testutil/fixtures/load"
 	"github.com/pkg/errors"
 	"gotest.tools/v3/assert"
 )

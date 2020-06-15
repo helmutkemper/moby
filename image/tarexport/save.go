@@ -1,4 +1,4 @@
-package tarexport // import "github.com/docker/docker/image/tarexport"
+package tarexport // import "github.com/helmutkemper/moby/image/tarexport"
 
 import (
 	"encoding/json"
@@ -13,11 +13,11 @@ import (
 
 	"github.com/docker/distribution"
 	"github.com/docker/distribution/reference"
-	"github.com/docker/docker/image"
-	v1 "github.com/docker/docker/image/v1"
-	"github.com/docker/docker/layer"
-	"github.com/docker/docker/pkg/archive"
-	"github.com/docker/docker/pkg/system"
+	"github.com/helmutkemper/moby/image"
+	v1 "github.com/helmutkemper/moby/image/v1"
+	"github.com/helmutkemper/moby/layer"
+	"github.com/helmutkemper/moby/pkg/archive"
+	"github.com/helmutkemper/moby/pkg/system"
 	digest "github.com/opencontainers/go-digest"
 	"github.com/pkg/errors"
 )

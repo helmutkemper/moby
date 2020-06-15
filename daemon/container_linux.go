@@ -1,10 +1,10 @@
 //+build !windows
 
-package daemon // import "github.com/docker/docker/daemon"
+package daemon // import "github.com/helmutkemper/moby/daemon"
 
 import (
-	"github.com/docker/docker/container"
-	"github.com/docker/docker/errdefs"
+	"github.com/helmutkemper/moby/container"
+	"github.com/helmutkemper/moby/errdefs"
 )
 
 func (daemon *Daemon) saveAppArmorConfig(container *container.Container) error {

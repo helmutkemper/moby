@@ -19,7 +19,7 @@ To fork and clone Moby:
 
 1. Open a browser and log into GitHub with your account.
 
-2. Go to the <a href="https://github.com/moby/moby"
+2. Go to the <a href="https://github.com/helmutkemper/moby"
 target="_blank">moby/moby repository</a>.
 
 3. Click the "Fork" button in the upper right corner of the GitHub interface.
@@ -125,7 +125,7 @@ To configure your username, email, and add a remote:
 4. Set your local repo to track changes upstream, on the `moby/moby` repository.
 
    ```bash
-   $ git remote add upstream https://github.com/moby/moby.git
+   $ git remote add upstream https://github.com/helmutkemper/moby.git
    ```
 
 5. Check the result in your `git` configuration.
@@ -142,7 +142,7 @@ To configure your username, email, and add a remote:
    branch.master.merge=refs/heads/master
    user.name=Mary Anthony
    user.email=mary@docker.com
-   remote.upstream.url=https://github.com/moby/moby.git
+   remote.upstream.url=https://github.com/helmutkemper/moby.git
    remote.upstream.fetch=+refs/heads/*:refs/remotes/upstream/*
    ```
 
@@ -152,8 +152,8 @@ To configure your username, email, and add a remote:
    $ git remote -v
    origin	https://github.com/moxiegirl/moby.git (fetch)
    origin	https://github.com/moxiegirl/moby.git (push)
-   upstream https://github.com/moby/moby.git (fetch)
-   upstream https://github.com/moby/moby.git (push)
+   upstream https://github.com/helmutkemper/moby.git (fetch)
+   upstream https://github.com/helmutkemper/moby.git (push)
    ```
 
 ## Task 3. Create and push a branch

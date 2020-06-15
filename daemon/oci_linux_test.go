@@ -1,4 +1,4 @@
-package daemon // import "github.com/docker/docker/daemon"
+package daemon // import "github.com/helmutkemper/moby/daemon"
 
 import (
 	"io/ioutil"
@@ -6,13 +6,13 @@ import (
 	"path/filepath"
 	"testing"
 
-	containertypes "github.com/docker/docker/api/types/container"
-	"github.com/docker/docker/container"
-	"github.com/docker/docker/daemon/config"
-	"github.com/docker/docker/daemon/network"
-	"github.com/docker/docker/pkg/containerfs"
-	"github.com/docker/docker/pkg/idtools"
 	"github.com/docker/libnetwork"
+	containertypes "github.com/helmutkemper/moby/api/types/container"
+	"github.com/helmutkemper/moby/container"
+	"github.com/helmutkemper/moby/daemon/config"
+	"github.com/helmutkemper/moby/daemon/network"
+	"github.com/helmutkemper/moby/pkg/containerfs"
+	"github.com/helmutkemper/moby/pkg/idtools"
 	"gotest.tools/v3/assert"
 	is "gotest.tools/v3/assert/cmp"
 )
@@ -60,7 +60,7 @@ func cleanupFakeContainer(c *container.Container) {
 // TestTmpfsDevShmNoDupMount checks that a user-specified /dev/shm tmpfs
 // mount (as in "docker run --tmpfs /dev/shm:rw,size=NNN") does not result
 // in "Duplicate mount point" error from the engine.
-// https://github.com/moby/moby/issues/35455
+// https://github.com/helmutkemper/moby/issues/35455
 func TestTmpfsDevShmNoDupMount(t *testing.T) {
 	c := &container.Container{
 		ShmPath: "foobar", // non-empty, for c.IpcMounts() to work
@@ -82,7 +82,7 @@ func TestTmpfsDevShmNoDupMount(t *testing.T) {
 // TestIpcPrivateVsReadonly checks that in case of IpcMode: private
 // and ReadonlyRootfs: true (as in "docker run --ipc private --read-only")
 // the resulting /dev/shm mount is NOT made read-only.
-// https://github.com/moby/moby/issues/36503
+// https://github.com/helmutkemper/moby/issues/36503
 func TestIpcPrivateVsReadonly(t *testing.T) {
 	c := &container.Container{
 		HostConfig: &containertypes.HostConfig{

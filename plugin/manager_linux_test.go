@@ -1,4 +1,4 @@
-package plugin // import "github.com/docker/docker/plugin"
+package plugin // import "github.com/helmutkemper/moby/plugin"
 
 import (
 	"io"
@@ -8,10 +8,10 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/docker/docker/api/types"
-	"github.com/docker/docker/pkg/stringid"
-	"github.com/docker/docker/pkg/system"
-	v2 "github.com/docker/docker/plugin/v2"
+	"github.com/helmutkemper/moby/api/types"
+	"github.com/helmutkemper/moby/pkg/stringid"
+	"github.com/helmutkemper/moby/pkg/system"
+	v2 "github.com/helmutkemper/moby/plugin/v2"
 	"github.com/moby/sys/mount"
 	"github.com/moby/sys/mountinfo"
 	specs "github.com/opencontainers/runtime-spec/specs-go"

@@ -1,17 +1,17 @@
 // +build !windows
 
-package container // import "github.com/docker/docker/daemon/cluster/executor/container"
+package container // import "github.com/helmutkemper/moby/daemon/cluster/executor/container"
 
 import (
 	"context"
 	"testing"
 	"time"
 
-	containertypes "github.com/docker/docker/api/types/container"
-	"github.com/docker/docker/container"
-	"github.com/docker/docker/daemon"
-	"github.com/docker/docker/daemon/events"
 	"github.com/docker/swarmkit/api"
+	containertypes "github.com/helmutkemper/moby/api/types/container"
+	"github.com/helmutkemper/moby/container"
+	"github.com/helmutkemper/moby/daemon"
+	"github.com/helmutkemper/moby/daemon/events"
 )
 
 func TestHealthStates(t *testing.T) {

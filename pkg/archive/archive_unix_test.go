@@ -1,6 +1,6 @@
 // +build !windows
 
-package archive // import "github.com/docker/docker/pkg/archive"
+package archive // import "github.com/helmutkemper/moby/pkg/archive"
 
 import (
 	"bytes"
@@ -13,7 +13,7 @@ import (
 	"syscall"
 	"testing"
 
-	"github.com/docker/docker/pkg/system"
+	"github.com/helmutkemper/moby/pkg/system"
 	rsystem "github.com/opencontainers/runc/libcontainer/system"
 	"golang.org/x/sys/unix"
 	"gotest.tools/v3/assert"

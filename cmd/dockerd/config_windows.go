@@ -4,7 +4,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/docker/docker/daemon/config"
+	"github.com/helmutkemper/moby/daemon/config"
 	"github.com/spf13/pflag"
 )
 

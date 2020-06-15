@@ -110,7 +110,7 @@ Write-Host -ForegroundColor Red "-----------------------------------------------
 # Jenkins Integration. Add a Windows Powershell build step as follows:
 #
 #    Write-Host -ForegroundColor green "INFO: Jenkins build step starting"
-#    $CISCRIPT_DEFAULT_LOCATION = "https://raw.githubusercontent.com/moby/moby/master/hack/ci/windows.ps1"
+#    $CISCRIPT_DEFAULT_LOCATION = "https://raw.githubusercontent.com/helmutkemper/moby/master/hack/ci/windows.ps1"
 #    $CISCRIPT_LOCAL_LOCATION = "$env:TEMP\executeCI.ps1"
 #    Write-Host -ForegroundColor green "INFO: Removing cached execution script"
 #    Remove-Item $CISCRIPT_LOCAL_LOCATION -Force -ErrorAction SilentlyContinue 2>&1 | Out-Null
@@ -267,7 +267,7 @@ Try {
     Get-ChildItem Env: | Out-String
 
     # PR
-    if (-not ($null -eq $env:PR)) { Write-Output "INFO: PR#$env:PR (https://github.com/docker/docker/pull/$env:PR)" }
+    if (-not ($null -eq $env:PR)) { Write-Output "INFO: PR#$env:PR (https://github.com/helmutkemper/moby/pull/$env:PR)" }
 
     # Make sure docker is installed
     if ($null -eq (Get-Command "docker" -ErrorAction SilentlyContinue)) { Throw "ERROR: docker is not installed or not found on path" }
@@ -490,7 +490,7 @@ Try {
     # Following at the moment must be docker\docker as it's dictated by dockerfile.Windows
     $contPath="$COMMITHASH`:c`:\gopath\src\github.com\docker\docker\bundles"
 
-    # After https://github.com/docker/docker/pull/30290, .git was added to .dockerignore. Therefore
+    # After https://github.com/helmutkemper/moby/pull/30290, .git was added to .dockerignore. Therefore
     # we have to calculate unsupported outside of the container, and pass the commit ID in through
     # an environment variable for the binary build
     $CommitUnsupported=""

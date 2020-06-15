@@ -1,4 +1,4 @@
-package daemon // import "github.com/docker/docker/daemon"
+package daemon // import "github.com/helmutkemper/moby/daemon"
 
 import (
 	"context"
@@ -6,8 +6,8 @@ import (
 	"fmt"
 	"time"
 
-	containertypes "github.com/docker/docker/api/types/container"
 	units "github.com/docker/go-units"
+	containertypes "github.com/helmutkemper/moby/api/types/container"
 )
 
 // ContainerTop handles `docker top` client requests.

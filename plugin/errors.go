@@ -1,4 +1,4 @@
-package plugin // import "github.com/docker/docker/plugin"
+package plugin // import "github.com/helmutkemper/moby/plugin"
 
 import "fmt"
 

@@ -1,6 +1,6 @@
 // +build !linux
 
-package homedir // import "github.com/docker/docker/pkg/homedir"
+package homedir // import "github.com/helmutkemper/moby/pkg/homedir"
 
 import (
 	"errors"

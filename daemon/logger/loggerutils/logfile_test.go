@@ -11,9 +11,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/docker/docker/daemon/logger"
-	"github.com/docker/docker/pkg/pubsub"
-	"github.com/docker/docker/pkg/tailfile"
+	"github.com/helmutkemper/moby/daemon/logger"
+	"github.com/helmutkemper/moby/pkg/pubsub"
+	"github.com/helmutkemper/moby/pkg/tailfile"
 	"gotest.tools/v3/assert"
 	"gotest.tools/v3/poll"
 )

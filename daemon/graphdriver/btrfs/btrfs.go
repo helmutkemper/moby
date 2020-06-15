@@ -1,6 +1,6 @@
 // +build linux
 
-package btrfs // import "github.com/docker/docker/daemon/graphdriver/btrfs"
+package btrfs // import "github.com/helmutkemper/moby/daemon/graphdriver/btrfs"
 
 /*
 #include <stdlib.h>
@@ -26,12 +26,12 @@ import (
 	"sync"
 	"unsafe"
 
-	"github.com/docker/docker/daemon/graphdriver"
-	"github.com/docker/docker/pkg/containerfs"
-	"github.com/docker/docker/pkg/idtools"
-	"github.com/docker/docker/pkg/parsers"
-	"github.com/docker/docker/pkg/system"
 	units "github.com/docker/go-units"
+	"github.com/helmutkemper/moby/daemon/graphdriver"
+	"github.com/helmutkemper/moby/pkg/containerfs"
+	"github.com/helmutkemper/moby/pkg/idtools"
+	"github.com/helmutkemper/moby/pkg/parsers"
+	"github.com/helmutkemper/moby/pkg/system"
 	"github.com/moby/sys/mount"
 	"github.com/opencontainers/selinux/go-selinux/label"
 	"github.com/pkg/errors"

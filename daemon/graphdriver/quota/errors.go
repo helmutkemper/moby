@@ -1,6 +1,6 @@
-package quota // import "github.com/docker/docker/daemon/graphdriver/quota"
+package quota // import "github.com/helmutkemper/moby/daemon/graphdriver/quota"
 
-import "github.com/docker/docker/errdefs"
+import "github.com/helmutkemper/moby/errdefs"
 
 var (
 	_ errdefs.ErrNotImplemented = (*errQuotaNotSupported)(nil)

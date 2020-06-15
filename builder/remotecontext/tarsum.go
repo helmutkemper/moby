@@ -1,11 +1,11 @@
-package remotecontext // import "github.com/docker/docker/builder/remotecontext"
+package remotecontext // import "github.com/helmutkemper/moby/builder/remotecontext"
 
 import (
 	"os"
 	"sync"
 
-	"github.com/docker/docker/pkg/containerfs"
 	iradix "github.com/hashicorp/go-immutable-radix"
+	"github.com/helmutkemper/moby/pkg/containerfs"
 	digest "github.com/opencontainers/go-digest"
 	"github.com/pkg/errors"
 	"github.com/tonistiigi/fsutil"

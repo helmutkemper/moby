@@ -1,4 +1,4 @@
-package jsonfilelog // import "github.com/docker/docker/daemon/logger/jsonfilelog"
+package jsonfilelog // import "github.com/helmutkemper/moby/daemon/logger/jsonfilelog"
 
 import (
 	"bytes"
@@ -6,7 +6,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/docker/docker/daemon/logger"
+	"github.com/helmutkemper/moby/daemon/logger"
 	"gotest.tools/v3/assert"
 	"gotest.tools/v3/fs"
 )

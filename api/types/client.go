@@ -1,13 +1,13 @@
-package types // import "github.com/docker/docker/api/types"
+package types // import "github.com/helmutkemper/moby/api/types"
 
 import (
 	"bufio"
 	"io"
 	"net"
 
-	"github.com/docker/docker/api/types/container"
-	"github.com/docker/docker/api/types/filters"
 	units "github.com/docker/go-units"
+	"github.com/helmutkemper/moby/api/types/container"
+	"github.com/helmutkemper/moby/api/types/filters"
 )
 
 // CheckpointCreateOptions holds parameters to create a checkpoint from a container

@@ -1,4 +1,4 @@
-package swarm // import "github.com/docker/docker/api/server/router/swarm"
+package swarm // import "github.com/helmutkemper/moby/api/server/router/swarm"
 
 import (
 	"context"
@@ -6,11 +6,11 @@ import (
 	"io"
 	"net/http"
 
-	"github.com/docker/docker/api/server/httputils"
-	basictypes "github.com/docker/docker/api/types"
-	"github.com/docker/docker/api/types/backend"
-	"github.com/docker/docker/api/types/swarm"
-	"github.com/docker/docker/api/types/versions"
+	"github.com/helmutkemper/moby/api/server/httputils"
+	basictypes "github.com/helmutkemper/moby/api/types"
+	"github.com/helmutkemper/moby/api/types/backend"
+	"github.com/helmutkemper/moby/api/types/swarm"
+	"github.com/helmutkemper/moby/api/types/versions"
 )
 
 // swarmLogs takes an http response, request, and selector, and writes the logs

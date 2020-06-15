@@ -1,4 +1,4 @@
-package container // import "github.com/docker/docker/daemon/cluster/executor/container"
+package container // import "github.com/helmutkemper/moby/daemon/cluster/executor/container"
 
 import (
 	"errors"
@@ -10,16 +10,6 @@ import (
 	"github.com/sirupsen/logrus"
 
 	"github.com/docker/distribution/reference"
-	"github.com/docker/docker/api/types"
-	enginecontainer "github.com/docker/docker/api/types/container"
-	"github.com/docker/docker/api/types/events"
-	"github.com/docker/docker/api/types/filters"
-	enginemount "github.com/docker/docker/api/types/mount"
-	"github.com/docker/docker/api/types/network"
-	volumetypes "github.com/docker/docker/api/types/volume"
-	"github.com/docker/docker/daemon/cluster/convert"
-	executorpkg "github.com/docker/docker/daemon/cluster/executor"
-	clustertypes "github.com/docker/docker/daemon/cluster/provider"
 	"github.com/docker/go-connections/nat"
 	netconst "github.com/docker/libnetwork/datastore"
 	"github.com/docker/swarmkit/agent/exec"
@@ -27,6 +17,16 @@ import (
 	"github.com/docker/swarmkit/api/genericresource"
 	"github.com/docker/swarmkit/template"
 	gogotypes "github.com/gogo/protobuf/types"
+	"github.com/helmutkemper/moby/api/types"
+	enginecontainer "github.com/helmutkemper/moby/api/types/container"
+	"github.com/helmutkemper/moby/api/types/events"
+	"github.com/helmutkemper/moby/api/types/filters"
+	enginemount "github.com/helmutkemper/moby/api/types/mount"
+	"github.com/helmutkemper/moby/api/types/network"
+	volumetypes "github.com/helmutkemper/moby/api/types/volume"
+	"github.com/helmutkemper/moby/daemon/cluster/convert"
+	executorpkg "github.com/helmutkemper/moby/daemon/cluster/executor"
+	clustertypes "github.com/helmutkemper/moby/daemon/cluster/provider"
 )
 
 const (

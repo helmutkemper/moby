@@ -5,7 +5,7 @@ import (
 	"math/rand"
 	"time"
 
-	"github.com/docker/docker/pkg/namesgenerator"
+	"github.com/helmutkemper/moby/pkg/namesgenerator"
 )
 
 func main() {

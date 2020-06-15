@@ -77,7 +77,7 @@ You are now ready clone and build the Moby source code.
 
 In a new (to pick up the path change) PowerShell prompt, run:
 
-    git clone https://github.com/moby/moby
+    git clone https://github.com/helmutkemper/moby
     cd moby
 
 This clones the main Moby repository. Check out [Moby Project](https://mobyproject.org)
@@ -109,7 +109,7 @@ To test it, stop the system Docker daemon and start the one you just built:
     .\dockerd.exe -D
 
 The other make targets work too, to run unit tests try:
-`docker run --rm docker-builder sh -c 'cd /c/gopath/src/github.com/docker/docker; hack/make.sh test-unit'`.
+`docker run --rm docker-builder sh -c 'cd /c/gopath/src/github.com/helmutkemper/moby; hack/make.sh test-unit'`.
 
 ### 6. Remove the interim binaries container
 

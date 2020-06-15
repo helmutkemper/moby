@@ -1,4 +1,4 @@
-package daemon // import "github.com/docker/docker/daemon"
+package daemon // import "github.com/helmutkemper/moby/daemon"
 
 import (
 	"encoding/json"
@@ -7,9 +7,9 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/docker/docker/pkg/ioutils"
-	"github.com/docker/docker/pkg/system"
 	"github.com/docker/libtrust"
+	"github.com/helmutkemper/moby/pkg/ioutils"
+	"github.com/helmutkemper/moby/pkg/system"
 )
 
 // LoadOrCreateTrustKey attempts to load the libtrust key at the given path,

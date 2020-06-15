@@ -1,12 +1,12 @@
 // +build !windows
 
-package config // import "github.com/docker/docker/daemon/config"
+package config // import "github.com/helmutkemper/moby/daemon/config"
 
 import (
 	"testing"
 
-	"github.com/docker/docker/opts"
 	units "github.com/docker/go-units"
+	"github.com/helmutkemper/moby/opts"
 	"github.com/spf13/pflag"
 	"gotest.tools/v3/assert"
 	is "gotest.tools/v3/assert/cmp"

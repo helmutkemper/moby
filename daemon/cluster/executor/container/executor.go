@@ -1,4 +1,4 @@
-package container // import "github.com/docker/docker/daemon/cluster/executor/container"
+package container // import "github.com/helmutkemper/moby/daemon/cluster/executor/container"
 
 import (
 	"context"
@@ -7,20 +7,20 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/docker/docker/api/types"
-	"github.com/docker/docker/api/types/filters"
-	"github.com/docker/docker/api/types/network"
-	swarmtypes "github.com/docker/docker/api/types/swarm"
-	"github.com/docker/docker/daemon/cluster/controllers/plugin"
-	"github.com/docker/docker/daemon/cluster/convert"
-	executorpkg "github.com/docker/docker/daemon/cluster/executor"
-	clustertypes "github.com/docker/docker/daemon/cluster/provider"
 	networktypes "github.com/docker/libnetwork/types"
 	"github.com/docker/swarmkit/agent"
 	"github.com/docker/swarmkit/agent/exec"
 	"github.com/docker/swarmkit/api"
 	"github.com/docker/swarmkit/api/naming"
 	"github.com/docker/swarmkit/template"
+	"github.com/helmutkemper/moby/api/types"
+	"github.com/helmutkemper/moby/api/types/filters"
+	"github.com/helmutkemper/moby/api/types/network"
+	swarmtypes "github.com/helmutkemper/moby/api/types/swarm"
+	"github.com/helmutkemper/moby/daemon/cluster/controllers/plugin"
+	"github.com/helmutkemper/moby/daemon/cluster/convert"
+	executorpkg "github.com/helmutkemper/moby/daemon/cluster/executor"
+	clustertypes "github.com/helmutkemper/moby/daemon/cluster/provider"
 	"github.com/sirupsen/logrus"
 )
 

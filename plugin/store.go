@@ -1,14 +1,14 @@
-package plugin // import "github.com/docker/docker/plugin"
+package plugin // import "github.com/helmutkemper/moby/plugin"
 
 import (
 	"fmt"
 	"strings"
 
 	"github.com/docker/distribution/reference"
-	"github.com/docker/docker/errdefs"
-	"github.com/docker/docker/pkg/plugingetter"
-	"github.com/docker/docker/pkg/plugins"
-	v2 "github.com/docker/docker/plugin/v2"
+	"github.com/helmutkemper/moby/errdefs"
+	"github.com/helmutkemper/moby/pkg/plugingetter"
+	"github.com/helmutkemper/moby/pkg/plugins"
+	v2 "github.com/helmutkemper/moby/plugin/v2"
 	specs "github.com/opencontainers/runtime-spec/specs-go"
 	"github.com/pkg/errors"
 	"github.com/sirupsen/logrus"

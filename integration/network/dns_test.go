@@ -1,14 +1,14 @@
-package network // import "github.com/docker/docker/integration/network"
+package network // import "github.com/helmutkemper/moby/integration/network"
 
 import (
 	"context"
 	"testing"
 	"time"
 
-	"github.com/docker/docker/api/types"
-	"github.com/docker/docker/integration/internal/container"
-	"github.com/docker/docker/integration/internal/network"
-	"github.com/docker/docker/testutil/daemon"
+	"github.com/helmutkemper/moby/api/types"
+	"github.com/helmutkemper/moby/integration/internal/container"
+	"github.com/helmutkemper/moby/integration/internal/network"
+	"github.com/helmutkemper/moby/testutil/daemon"
 	"gotest.tools/v3/poll"
 	"gotest.tools/v3/skip"
 )

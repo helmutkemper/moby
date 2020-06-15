@@ -1,11 +1,11 @@
-package cache // import "github.com/docker/docker/image/cache"
+package cache // import "github.com/helmutkemper/moby/image/cache"
 
 import (
 	"testing"
 
-	"github.com/docker/docker/api/types/container"
-	"github.com/docker/docker/api/types/strslice"
 	"github.com/docker/go-connections/nat"
+	"github.com/helmutkemper/moby/api/types/container"
+	"github.com/helmutkemper/moby/api/types/strslice"
 )
 
 // Just to make life easier

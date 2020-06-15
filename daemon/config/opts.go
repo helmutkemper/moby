@@ -1,9 +1,9 @@
-package config // import "github.com/docker/docker/daemon/config"
+package config // import "github.com/helmutkemper/moby/daemon/config"
 
 import (
-	"github.com/docker/docker/api/types/swarm"
-	"github.com/docker/docker/daemon/cluster/convert"
 	"github.com/docker/swarmkit/api/genericresource"
+	"github.com/helmutkemper/moby/api/types/swarm"
+	"github.com/helmutkemper/moby/daemon/cluster/convert"
 )
 
 // ParseGenericResources parses and validates the specified string as a list of GenericResource

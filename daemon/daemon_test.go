@@ -1,4 +1,4 @@
-package daemon // import "github.com/docker/docker/daemon"
+package daemon // import "github.com/helmutkemper/moby/daemon"
 
 import (
 	"io/ioutil"
@@ -7,22 +7,22 @@ import (
 	"runtime"
 	"testing"
 
-	containertypes "github.com/docker/docker/api/types/container"
-	"github.com/docker/docker/container"
-	"github.com/docker/docker/errdefs"
-	_ "github.com/docker/docker/pkg/discovery/memory"
-	"github.com/docker/docker/pkg/idtools"
-	"github.com/docker/docker/pkg/truncindex"
-	volumesservice "github.com/docker/docker/volume/service"
 	"github.com/docker/go-connections/nat"
 	"github.com/docker/libnetwork"
+	containertypes "github.com/helmutkemper/moby/api/types/container"
+	"github.com/helmutkemper/moby/container"
+	"github.com/helmutkemper/moby/errdefs"
+	_ "github.com/helmutkemper/moby/pkg/discovery/memory"
+	"github.com/helmutkemper/moby/pkg/idtools"
+	"github.com/helmutkemper/moby/pkg/truncindex"
+	volumesservice "github.com/helmutkemper/moby/volume/service"
 	"github.com/pkg/errors"
 	"gotest.tools/v3/assert"
 	is "gotest.tools/v3/assert/cmp"
 )
 
 //
-// https://github.com/docker/docker/issues/8069
+// https://github.com/helmutkemper/moby/issues/8069
 //
 
 func TestGetContainer(t *testing.T) {

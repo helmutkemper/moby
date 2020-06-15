@@ -1,4 +1,4 @@
-package types // import "github.com/docker/docker/api/types"
+package types // import "github.com/helmutkemper/moby/api/types"
 
 import (
 	"errors"
@@ -8,13 +8,13 @@ import (
 	"strings"
 	"time"
 
-	"github.com/docker/docker/api/types/container"
-	"github.com/docker/docker/api/types/filters"
-	"github.com/docker/docker/api/types/mount"
-	"github.com/docker/docker/api/types/network"
-	"github.com/docker/docker/api/types/registry"
-	"github.com/docker/docker/api/types/swarm"
 	"github.com/docker/go-connections/nat"
+	"github.com/helmutkemper/moby/api/types/container"
+	"github.com/helmutkemper/moby/api/types/filters"
+	"github.com/helmutkemper/moby/api/types/mount"
+	"github.com/helmutkemper/moby/api/types/network"
+	"github.com/helmutkemper/moby/api/types/registry"
+	"github.com/helmutkemper/moby/api/types/swarm"
 )
 
 // RootFS returns Image's RootFS description including the layer IDs.
